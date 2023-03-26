@@ -1,7 +1,7 @@
-<section class="section">
+<section class="sellers section">
   <div class="container container-mobile">
-    <h2><span>Top</span> sellers</h2>
-    <img
+    <h2 class="sellers__title container-mobile__title"><span class="sellers__title_accent">Top</span> sellers</h2>
+    <img class="sellers__img container-mobile__img"
       srcset="
         ../img/top-sellers/mobile1-335.jpg 335w,
         ../img/top-sellers/mobile1-670.jpg 670w
@@ -9,12 +9,12 @@
       src="../img/top-sellers/mobile1-335.jpg"
       alt=""
     />
-    <p>
+    <p class="container-mobile__description">
       Crazy enough chocolate originates from a bean just like the coffee bean
       called Cacao. Cacao has been around for thousands of years and was first
       discovered by the Native American tribe called the Mayans.
     </p>
-    <img
+    <img class="sellers__img container-mobile__img"
       srcset="
         ../img/top-sellers/mobile2-335.jpg 335w,
         ../img/top-sellers/mobile2-670.jpg 670w
@@ -23,7 +23,7 @@
       alt=""
     />
 
-    <button type="button">Buy now</button>
+    <button class="sellers__button" type="button">Buy now</button>
   </div>
 
   <!-- ===========================
@@ -31,11 +31,11 @@
     first varient will be hidden
     ================================ -->
 
-  <div class="container">
-    <h2><span>Top</span> sellers</h2>
-    <ul>
-      <li>
-        <img
+  <div class="container container-desktop-tablet">
+    <h2 class="sellers__title"><span class="sellers__title_accent">Top</span> sellers</h2>
+    <ul class="sellers__img-list img-list">
+      <li class="img-list__list-item">
+        <img class="sellers__img "
           srcset="
             ../img/top-sellers/tablet1-344.jpg  344w,
             ../img/top-sellers/tablet1-688.jpg  688w,
@@ -47,8 +47,8 @@
           alt=""
         />
       </li>
-      <li>
-        <img
+      <li class="img-list__list-item">
+        <img class="sellers__img "
           srcset="
             ../img/top-sellers/tablet2-344.jpg  344w,
             ../img/top-sellers/tablet2-688.jpg  688w,
@@ -60,8 +60,8 @@
           alt=""
         />
       </li>
-      <li>
-        <img
+      <li class="img-list__list-item img-list__list-item_tablet-hidden">
+        <img class="sellers__img "
           srcset="
             ../img/top-sellers/tablet3-344.jpg  344w,
             ../img/top-sellers/tablet3-688.jpg  688w,
@@ -74,16 +74,20 @@
         />
       </li>
     </ul>
-    <div class="flex-container">
-      <p>
+    <div class="sellers__flex-container">
+      <p class="container-desktop-tablet__description">
         Crazy enough chocolate originates from a bean just like the coffee bean
         called Cacao. Cacao has been around for thousands of years and was first
         discovered by the Native American tribe called the Mayans.
       </p>
-      <button type="button">Buy now</button>
+      <button class="sellers__button" type="button">Buy now</button>
     </div>
   </div>
-  <div class="backdrop">
+  <!-- ==================
+      markup modals
+   ================== -->
+  
+   <div class="backdrop">
     <div class="order-modal modal">
       <h2><span>buy</span> now</h2>
 
@@ -172,4 +176,5 @@
       discount on all our products.
     </p>
   </div>
+    
 </section>
