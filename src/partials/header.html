@@ -1,13 +1,13 @@
 <header class="header">
-  <div class="container">
-    <nav class="header_nav">
-      <a href="" class="header_logo">
-        SIMPLY CHOCOLATE
-        <svg height="21" width="21">
-          <use href="../img/symbol-defs.svg#icon-chocolate"></use>
-        </svg>
-      </a>
+  <div class="header_container container">
+    <a href="" class="header_logo">
+      SIMPLY <span class="header_logo_secondary">CHOCOLATE</span>
+      <svg height="21" width="21" class="header_logo_icon">
+        <use href="../img/symbol-defs.svg#icon-chocolate"></use>
+      </svg>
+    </a>
 
+    <nav class="header_nav">
       <div class="header_main">
         <ul class="header_list">
           <li class="header_item"><a href="" class="header_link">Home</a></li>
@@ -25,30 +25,49 @@
           </li>
         </ul>
 
-        <a href="" class="header_socials"> </a>
-        <a href="" class="header_socials"> </a>
+        <a href="" class="header_socials">
+          <svg height="24" width="24">
+            <use href="../img/symbol-defs.svg#icon-instagram"></use>
+          </svg>
+        </a>
+        <a href="" class="header_socials">
+          <svg height="24" width="24">
+            <use href="../img/symbol-defs.svg#icon-twitter"></use>
+          </svg>
+        </a>
       </div>
     </nav>
 
-    <div class="header_modal">
-      <ul class="header_list">
-        <li class="header_item"><a href="" class="header_link">Home</a></li>
-        <li class="header_item">
-          <a href="" class="header_link">How it’s made?</a>
-        </li>
-        <li class="header_item">
-          <a href="" class="header_link">Our products</a>
-        </li>
-        <li class="header_item">
-          <a href="" class="header_link">Top sellers</a>
-        </li>
-        <li class="header_item">
-          <a href="" class="header_link">Chocolate is loved</a>
-        </li>
-      </ul>
+    <a href="" class="header_humburger-button js-open-modal" data-modal="1">
+      <svg height="28" width="28">
+        <use href="../img/symbol-defs.svg#icon-humburger-menu"></use>
+      </svg>
+    </a>
 
-      <a href="" class="header_socials"> </a>
-      <a href="" class="header_socials"> </a>
+    <div class="overlay js-overlay-modal header_backdrop">
+      <div class="modal header_modal" data-modal="1">
+        <a href="" class="header_button_close js-modal-close">
+          <svg height="28" width="28" class="header_icon_close">
+            <use href="../img/symbol-defs.svg#icon-x"></use>
+          </svg>
+        </a>
+
+        <ul class="header_list">
+          <li class="header_item"><a href="" class="header_link">Home</a></li>
+          <li class="header_item">
+            <a href="" class="header_link">How it’s made?</a>
+          </li>
+          <li class="header_item">
+            <a href="" class="header_link">Our products</a>
+          </li>
+          <li class="header_item">
+            <a href="" class="header_link">Top sellers</a>
+          </li>
+          <li class="header_item">
+            <a href="" class="header_link">Chocolate is loved</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </header>
