@@ -1,4 +1,5 @@
-.reviews_title {
+.reviews_title,
+.rewiews-modal_title {
   margin-bottom: 22px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
@@ -10,7 +11,8 @@
   color: #111111;
 }
 
-.reviews_title__colored-part {
+.reviews_title__colored-part,
+.rewiews-modal_title__colored-part {
   color: #fd9222;
 }
 
@@ -85,7 +87,7 @@
   background: #fd9222;
 }
 
-.review-open-btn {
+.reviews_open-btn {
   padding: 12px 28px;
   min-width: 165px;
   height: 41px;
@@ -105,8 +107,8 @@
   transition: color, background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.review-open-btn:hover,
-.review-open-btn:focus {
+.reviews_open-btn:hover,
+.reviews_open-btn:focus {
   color: #ffffff;
   background-color: #fd9222;
 }
