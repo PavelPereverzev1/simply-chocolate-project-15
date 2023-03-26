@@ -15,7 +15,7 @@
     />
     
     <script type="module" crossorigin src="/simply-chocolate-project-15/assets/index-e55ebc05.js"></script>
-    <link rel="stylesheet" href="/simply-chocolate-project-15/assets/index-8dc81d90.css">
+    <link rel="stylesheet" href="/simply-chocolate-project-15/assets/index-36024ec9.css">
   </head>
   <body>
     <!-- Ростислав -->
@@ -845,16 +845,65 @@
       </ul>
       <div class="swiper-pagination"></div>
     </div>
-    <button class="review-open-btn js-open-modal" data-modal="1" type="button">
+    <button class="reviews_open-btn js-open-modal" data-modal="1" type="button">
       Leave a review
     </button>
-    <div class="overlay js-overlay-modal reviews-backdrop">
-      <div class="modal reviews-modal" data-modal="1">
-        <button class="js-modal-close review-open-btn" type="button">
-          Leave a review
-        </button>
-      </div>
+    <div class="modal reviews-modal" data-modal="1">
+      <button class="js-modal-close reviews-modal_close-btn" type="button">
+        <svg class="reviews-modal_close-icon" width="24" height="24">
+          <use href="/simply-chocolate-project-15/assets/symbol-defs-b3c00ac9.svg#icon-x-close"></use>
+        </svg>
+      </button>
+      <h2 class="rewiews-modal_title">
+        leave a review <br />
+        about
+        <span class="rewiews-modal_title__colored-part">our chocolate</span>
+      </h2>
+      <form class="reviews-form">
+        <input
+          class="modal-form_input"
+          name="user_name"
+          type="text"
+          placeholder="Name"
+          required
+          pattern="^[a-zA-Zа-яА-ЯіІїЇ]+$"
+          minlength="2"
+        />
+        <input
+          class="modal-form_input"
+          name="user_email"
+          placeholder="Enter your email"
+          type="email"
+          pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$"
+          required
+        />
+        <div class="input-field-wraper">
+          <div class="input-prefix-wraper">
+            <svg class="reviews-modal_close-icon" width="24" height="24">
+              <use href="/simply-chocolate-project-15/assets/symbol-defs-b3c00ac9.svg#icon-ukraine"></use>
+            </svg>
+            <span class="phone-prefix">+380</span>
+          </div>
+          <input
+            class="modal-form_input modal-form_input__iconed"
+            name="user_phone"
+            type="tel"
+            placeholder="Phone number"
+            required
+            pattern="^[0-9]{3}-[0-9]{2}-[0-9]{2}$"
+            title="xxx-xx-xx"
+            minlength="7"
+          />
+        </div>
+        <textarea
+          class="modal-form_message"
+          name="user_comment"
+          placeholder="Text input"
+        ></textarea>
+        <button class="modal-form_submit-btn" type="submit">Send</button>
+      </form>
     </div>
+    <div class="overlay js-overlay-modal reviews-backdrop"></div>
   </div>
 </section>
 
