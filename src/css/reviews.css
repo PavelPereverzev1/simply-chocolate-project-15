@@ -139,6 +139,7 @@
   /*  Установаем ширину окна  */
   width: 100%;
   max-width: 310px;
+  height: 470px;
 
   /*  Центрируем и задаем z-index */
   position: fixed;
@@ -150,9 +151,9 @@
   /*  Побочные стили   */
   box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
   text-align: center;
-  padding: 30px;
-  border-radius: 3px;
-  background-color: #fff;
+  padding:32px 24px;
+  border-radius: 15px;
+  background-color: #FAFAFA;
   transition: 0.3s all;
 }
 
@@ -480,7 +481,5 @@
     max-width: 360px;
   }
 
-  .modal-form_input__iconed {
-    padding-left: 106px;
-  }
+  
 }
