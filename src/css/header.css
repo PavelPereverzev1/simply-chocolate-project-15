@@ -38,6 +38,7 @@
 @media screen and (min-width: 1200px) {
   .header_nav {
     display: block;
+    margin-left: auto;
   }
 }
 
@@ -47,12 +48,19 @@
 }
 
 .header_link {
+  padding: 36px 0;
   font-weight: var(--font-weight-medium);
   line-height: 1.14;
 
   letter-spacing: -0.02em;
 
   color: var(--clr-text-secondary);
+}
+
+@media screen and (min-width: 1200px) {
+  .header_link {
+    color: var(--clr-text-primary);
+  }
 }
 
 .header_humburger-button {
