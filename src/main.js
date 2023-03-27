@@ -2,7 +2,7 @@
 const swiper = new Swiper(".rewiews-slider", {
    // Optional parameters
  
-   loop: true,
+   loop: false,
  
    // If we need pagination
    pagination: {
@@ -98,6 +98,7 @@ document.addEventListener('DOMContentLoaded', function () {
             подложке и окну чтобы показать их. */
       modalElem.classList.add('active');
       overlay.classList.add('active');
+      document.body.style.overflow = 'hidden';
     }); // end click
   }); // end foreach
 
@@ -107,8 +108,24 @@ document.addEventListener('DOMContentLoaded', function () {
 
       parentModal.classList.remove('active');
       overlay.classList.remove('active');
+      document.body.style.overflow = '';
     });
   }); // end foreach
+
+  // var popup = function(e) {
+  //   e.preventDefault();
+  //   parentModal = e.closest('.modal');
+  //   parentModal.classList.remove('active');
+  // };
+
+  // var elementForm = document.querySelectorAll('.form');
+  // elementForm.forEach(function(){
+  //   this.addEventListener('submit', popup(this));
+  // })
+  
+  
+
+
 
   document.body.addEventListener(
     'keyup',
@@ -126,6 +143,7 @@ document.addEventListener('DOMContentLoaded', function () {
   overlay.addEventListener('click', function () {
     document.querySelector('.modal.active').classList.remove('active');
     this.classList.remove('active');
+    document.body.style.overflow = '';
   });
 }); // end ready
 

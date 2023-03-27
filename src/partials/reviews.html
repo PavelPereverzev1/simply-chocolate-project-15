@@ -9,6 +9,10 @@
           <div class="rewiews-card">
             <div class="rewiews-card_img-thumb">
               <img
+                srcset="
+                  ./img/reviews/victoria-dobrzhanska.jpg    1x,
+                  ./img/reviews/victoria-dobrzhanska@2x.jpg 2x
+                "
                 src="./img/reviews/victoria-dobrzhanska.jpg"
                 alt="client's photo"
               />
@@ -25,7 +29,14 @@
         <li class="swiper-slide reviews-list_item">
           <div class="rewiews-card">
             <div class="rewiews-card_img-thumb">
-              <img src="./img/reviews/nazar-babenko.jpg" alt="client's photo" />
+              <img
+                src="./img/reviews/nazar-babenko.jpg"
+                srcset="
+                  ./img/reviews/nazar-babenko.jpg    1x,
+                  ./img/reviews/nazar-babenko@2x.jpg 2x
+                "
+                alt="client's photo"
+              />
             </div>
             <div class="rewiews-card_content">
               <h3 class="rewiews-card_title">Nazar Babenko</h3>
@@ -41,6 +52,10 @@
           <div class="rewiews-card">
             <div class="rewiews-card_img-thumb">
               <img
+                srcset="
+                  ./img/reviews/olena-kampusch.jpg    1x,
+                  ./img/reviews/olena-kampusch@2x.jpg 2x
+                "
                 src="./img/reviews/olena-kampusch.jpg"
                 alt="client's photo"
               />
@@ -58,7 +73,14 @@
         <li class="swiper-slide reviews-list_item">
           <div class="rewiews-card">
             <div class="rewiews-card_img-thumb">
-              <img src="./img/reviews/natalia-sus.jpg" alt="client's photo" />
+              <img
+                src="./img/reviews/natalia-sus.jpg"
+                srcset="
+                  ./img/reviews/natalia-sus.jpg    1x,
+                  ./img/reviews/natalia-sus@2x.jpg 2x
+                "
+                alt="client's photo"
+              />
             </div>
             <div class="rewiews-card_content">
               <h3 class="rewiews-card_title">Natalia Sus</h3>
@@ -74,6 +96,10 @@
           <div class="rewiews-card">
             <div class="rewiews-card_img-thumb">
               <img
+                srcset="
+                  ./img/reviews/danilo-nottingham.jpg    1x,
+                  ./img/reviews/danilo-nottingham@2x.jpg 2x
+                "
                 src="./img/reviews/danilo-nottingham.jpg"
                 alt="client's photo"
               />
@@ -91,7 +117,14 @@
         <li class="swiper-slide reviews-list_item">
           <div class="rewiews-card">
             <div class="rewiews-card_img-thumb">
-              <img src="./img/reviews/irina-tydnyuk.jpg" alt="client's photo" />
+              <img
+                src="./img/reviews/irina-tydnyuk.jpg"
+                srcset="
+                  ./img/reviews/irina-tydnyuk.jpg    1x,
+                  ./img/reviews/irina-tydnyuk@2x.jpg 2x
+                "
+                alt="client's photo"
+              />
             </div>
             <div class="rewiews-card_content">
               <h3 class="rewiews-card_title">Irina Tydnyuk</h3>
@@ -109,6 +142,7 @@
     <button class="reviews_open-btn js-open-modal" data-modal="1" type="button">
       Leave a review
     </button>
+    <div class="overlay js-overlay-modal reviews-backdrop"></div>
     <div class="modal reviews-modal" data-modal="1">
       <button class="js-modal-close reviews-modal_close-btn" type="button">
         <svg class="reviews-modal_close-icon" width="24" height="24">
@@ -116,8 +150,7 @@
         </svg>
       </button>
       <h2 class="rewiews-modal_title">
-        leave a review <br />
-        about
+        leave a review about
         <span class="rewiews-modal_title__colored-part">our chocolate</span>
       </h2>
       <form class="reviews-form">
@@ -140,7 +173,7 @@
         />
         <div class="input-field-wraper">
           <div class="input-prefix-wraper">
-            <svg class="reviews-modal_close-icon" width="24" height="24">
+            <svg class="reviews-modal_country-icon">
               <use href="./img/symbol-defs.svg#icon-ukraine"></use>
             </svg>
             <span class="phone-prefix">+380</span>
@@ -161,10 +194,18 @@
           name="user_comment"
           placeholder="Text input"
         ></textarea>
-        <button class="modal-form_submit-btn js-open-modal " data-modal="1" type="submit">Send</button>
+        <button class="modal-form_submit-btn" type="submit">Send</button>
       </form>
     </div>
-    <div class="thanks-modal modal" data-modal="1"></div>
+    <div class="modal reviews-thanks-modal" data-modal="2">
+      <button class="js-modal-close reviews-thanks-modal_close-btn" type="button">
+        <svg class="reviews-thanks-modal_close-icon">
+          <use href="./img/symbol-defs.svg#icon-x-close"></use>
+        </svg>
+      </button>
+      <h2 class="reviews-thanks-modal_title">thank you <br> for your feedback!</h2>
+      <p class="reviews-thanks-modal_text">We are so happy to hear from you!</p>
+    </div>
     <div class="overlay js-overlay-modal reviews-backdrop"></div>
   </div>
 </section>
