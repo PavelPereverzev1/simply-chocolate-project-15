@@ -1,0 +1,647 @@
+@media screen and (max-width: 767px) {
+
+    .components-wrapper {
+        padding-top: 72px;
+        padding-bottom: 72px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .components-subtitle {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 1.16;
+        text-align: center;
+        letter-spacing: -0.03em;
+        text-transform: uppercase;
+        color: #111111;
+        margin-bottom: 28px;
+        margin-right: 26px;
+        margin-left: 26px;
+    }
+
+    .components-sublitle-orange {
+        color: #FD9222;
+    }
+
+    .components-description {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.28;
+        text-align: center;
+        letter-spacing: -0.02em;
+        color: #111111;
+
+        margin-bottom: 32px;
+    }
+
+    .components-milk-chocolate-fill {
+        padding: 28px 55px 0 56px;
+        margin-bottom: 25px;
+
+    }
+
+    .components-milk-fill {
+        padding: 28px 55px 0 56px;
+        margin-bottom: 25px;
+    }
+
+    .components-nuts-fill {
+        padding: 28px 55px 0 56px;
+        margin-bottom: 25px;
+    }
+
+    .components-semi-sweet-chocolate-fill {
+        padding: 28px 55px 0 56px;
+        margin-bottom: 25px;
+    }
+
+    .components-img-wrapper-chocolate {
+        width: 335px;
+        height: 270px;
+        background: #FD9222;
+        border-radius: 15px;
+    }
+
+    .components-img-wrapper-milk {
+        width: 333px;
+        height: 268px;
+        background: #FFFFFF;
+        border: 1px solid #FD9222;
+        border-radius: 15px;
+
+    }
+
+    .components-img-wrapper-nuts {
+        width: 335px;
+        height: 270px;
+        background: #1E1823;
+        border-radius: 15px;
+    }
+
+    .components-img-wrapper-semi {
+        width: 333px;
+        height: 268px;
+        background: #FFFFFF;
+        border: 1px solid #FD9222;
+        border-radius: 15px;
+    }
+
+    .components-nuts-fill {
+        background: #1E1823;
+        border-radius: 15px;
+    }
+
+
+    .components-in-picture-subtitle {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: -0.02em;
+        text-transform: uppercase;
+        color: #111111;
+        padding-left: 28px;
+        padding-bottom: 28px;
+    }
+
+    .components-in-picture-subtitle-white {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: -0.02em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        padding-left: 28px;
+        padding-bottom: 28px;
+    }
+
+    .components-overlay-subtitle {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 1.22;
+        letter-spacing: -0.03em;
+        text-transform: uppercase;
+        color: #111111;
+        margin-bottom: 8px;
+    }
+
+    .components-overlay-desc {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.28;
+        letter-spacing: -0.02em;
+        color: #111111;
+    }
+
+    .components-card-list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .components-card-item {
+        position: relative;
+        overflow: hidden;
+    }
+
+
+    .components-overlay-btn {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 1.2;
+        color: #111111;
+        padding: 6px 16px;
+        background: #FAFAFA;
+        border: 1px solid #FD9222;
+        border-radius: 35px;
+        margin-bottom: 14px;
+        transition: background-color 500ms linear, fill 500ms linear;
+    }
+
+    .components-overlay-btn:not(:last-child) {
+        margin-right: 6px;
+    }
+
+    .components-overlay-btn:hover {
+        background-color: #FD9222;
+        border-radius: 35px;
+        color: #FFFFFF;
+    }
+
+    .components-overlay-btn:focus {
+        background-color: #FD9222;
+        border-radius: 35px;
+        color: #FFFFFF;
+    }
+
+    .overlay {
+        background: #FFFFFF;
+        border-radius: 15px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow-y: scroll;
+        transform: translate(0, 100%);
+        transition: transform 500ms linear;
+    }
+
+    .components-card-item:hover .overlay {
+        transform: translate(0, 0);
+    }
+
+    .components-overlay-position {
+        padding: 28px;
+    }
+}
+
+/* TABLETTTTTTTTTTTTTTTTTTTTTTT */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+
+    .components-wrapper {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .components-subtitle {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 1.16;
+        text-align: center;
+        letter-spacing: -0.03em;
+        text-transform: uppercase;
+        color: #111111;
+        margin-bottom: 28px;
+        margin-right: 146.5px;
+        margin-left: 146.5px;
+    }
+
+    .components-sublitle-orange {
+        color: #FD9222;
+    }
+
+    .components-description {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.28;
+        text-align: center;
+        letter-spacing: -0.02em;
+        color: #111111;
+        margin-right: 141px;
+        margin-left: 141px;
+        margin-bottom: 50px;
+    }
+
+    .components-milk-chocolate-fill {
+        padding: 28px 56px 0 56px;
+        margin-bottom: 25px;
+
+    }
+
+    .components-milk-fill {
+        padding: 28px 56px 0 56px;
+        margin-bottom: 25px;
+    }
+
+    .components-nuts-fill {
+        padding: 28px 56px 0 56px;
+        margin-bottom: 25px;
+    }
+
+    .components-semi-sweet-chocolate-fill {
+        padding: 28px 56px 0 56px;
+        margin-bottom: 25px;
+    }
+
+    .components-img-wrapper-chocolate {
+        width: 336px;
+        height: 270px;
+        background: #FD9222;
+        border-radius: 15px;
+    }
+
+    .components-img-wrapper-milk {
+        width: 334px;
+        height: 268px;
+        background: #FFFFFF;
+        border: 1px solid #FD9222;
+        border-radius: 15px;
+
+    }
+
+    .components-img-wrapper-nuts {
+        width: 336px;
+        height: 270px;
+        background: #1E1823;
+        border-radius: 15px;
+    }
+
+    .components-img-wrapper-semi {
+        width: 334px;
+        height: 268px;
+        background: #FFFFFF;
+        border: 1px solid #FD9222;
+        border-radius: 15px;
+    }
+
+    .components-nuts-fill {
+        background: #1E1823;
+        border-radius: 15px;
+    }
+
+
+    .components-in-picture-subtitle {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: -0.02em;
+        text-transform: uppercase;
+        color: #111111;
+        padding-left: 28px;
+        padding-bottom: 28px;
+    }
+
+    .components-in-picture-subtitle-white {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: -0.02em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        padding-left: 28px;
+        padding-bottom: 28px;
+    }
+
+    .components-overlay-subtitle {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 1.22;
+        letter-spacing: -0.03em;
+        text-transform: uppercase;
+        color: #111111;
+        margin-bottom: 8px;
+    }
+
+    .components-overlay-desc {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.28;
+        letter-spacing: -0.02em;
+        color: #111111;
+    }
+
+    .components-card-list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 32px;
+    }
+
+    .components-card-item {
+        position: relative;
+        overflow: hidden;
+
+    }
+
+
+
+    .components-overlay-btn {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 1.2;
+        color: #111111;
+        padding: 6px 16px;
+        background: #FAFAFA;
+        border: 1px solid #FD9222;
+        border-radius: 35px;
+        margin-bottom: 14px;
+        transition: background-color 500ms linear, fill 500ms linear;
+    }
+
+    .components-overlay-btn:not(:last-child) {
+        margin-right: 6px;
+    }
+
+    .components-overlay-btn:hover {
+        background-color: #FD9222;
+        border-radius: 35px;
+        color: #FFFFFF;
+    }
+
+    .components-overlay-btn:focus {
+        background-color: #FD9222;
+        border-radius: 35px;
+        color: #FFFFFF;
+    }
+
+    .overlay {
+        background: #FFFFFF;
+        border-radius: 15px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow-y: scroll;
+        transform: translate(0, 100%);
+        transition: transform 500ms linear;
+    }
+
+    .components-card-item:hover .overlay {
+        transform: translate(0, 0);
+    }
+
+    .components-overlay-position {
+        padding: 28px;
+    }
+}
+
+/* DESKTOPPPPPPPPPPPPPPPP */
+ @media screen and (min-width: 1200px) {
+
+
+    .components-wrapper {
+        padding-top: 120px;
+        padding-bottom: 120px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .components-subtitle {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 1.16;
+        text-align: center;
+        letter-spacing: -0.03em;
+        text-transform: uppercase;
+        color: #111111;
+        margin-bottom: 28px;
+        margin-right: 362.5px;
+        margin-left: 362.5px;
+    }
+
+    .components-sublitle-orange {
+        color: #FD9222;
+    }
+
+    .components-description {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.28;
+        text-align: center;
+        letter-spacing: -0.02em;
+        color: #111111;
+        margin-right: 325px;
+        margin-left: 325px;
+        margin-bottom: 50px;
+    }
+
+    .components-milk-chocolate-fill {
+        padding: 28px 36px 0 28px;
+        margin-bottom: 36px;
+
+    }
+
+    .components-milk-fill {
+        padding: 28px 36px 0 28px;
+        margin-bottom: 36px;
+    }
+
+    .components-nuts-fill {
+        padding: 28px 36px 0 28px;
+        margin-bottom: 36px;
+    }
+
+    .components-semi-sweet-chocolate-fill {
+        padding: 28px 36px 0 28px;
+        margin-bottom: 36px;
+    }
+
+    .components-img-wrapper-chocolate {
+        width: 270px;
+        height: 270px;
+        background: #FD9222;
+        border-radius: 15px;
+    }
+
+    .components-img-wrapper-milk {
+        width: 268px;
+        height: 268px;
+        background: #FFFFFF;
+        border: 1px solid #FD9222;
+        border-radius: 15px;
+
+    }
+
+    .components-img-wrapper-nuts {
+        width: 270px;
+        height: 270px;
+        background: #1E1823;
+        border-radius: 15px;
+    }
+
+    .components-img-wrapper-semi {
+        width: 268px;
+        height: 268px;
+        background: #FFFFFF;
+        border: 1px solid #FD9222;
+        border-radius: 15px;
+    }
+
+    .components-nuts-fill {
+        background: #1E1823;
+        border-radius: 15px;
+    }
+
+
+    .components-in-picture-subtitle {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: -0.02em;
+        text-transform: uppercase;
+        color: #111111;
+        padding-left: 28px;
+        padding-bottom: 28px;
+    }
+
+    .components-in-picture-subtitle-white {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: -0.02em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        padding-left: 28px;
+        padding-bottom: 28px;
+    }
+
+    .components-overlay-subtitle {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 1.22;
+        letter-spacing: -0.03em;
+        text-transform: uppercase;
+        color: #111111;
+        margin-bottom: 8px;
+    }
+
+    .components-overlay-desc {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.28;
+        letter-spacing: -0.02em;
+        color: #111111;
+    }
+
+    .components-card-list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 19px;
+    }
+
+    .components-card-item {
+        position: relative;
+        overflow: hidden;
+    }
+
+
+    .components-overlay-btn {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 1.2;
+        color: #111111;
+        padding: 6px 16px;
+        background: #FAFAFA;
+        border: 1px solid #FD9222;
+        border-radius: 35px;
+        margin-bottom: 14px;
+        transition: background-color 500ms linear, fill 500ms linear;
+    }
+
+    .components-overlay-btn:not(:last-child) {
+        margin-right: 6px;
+    }
+
+    .components-overlay-btn:hover {
+        background-color: #FD9222;
+        border-radius: 35px;
+        color: #FFFFFF;
+    }
+
+    .components-overlay-btn:focus {
+        background-color: #FD9222;
+        border-radius: 35px;
+        color: #FFFFFF;
+    }
+
+    .overlay {
+        background: #FFFFFF;
+        border-radius: 15px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow-y: scroll;
+        transform: translate(0, 100%);
+        transition: transform 500ms linear;
+    }
+
+    .components-card-item:hover .overlay {
+        transform: translate(0, 0);
+    }
+
+    .components-overlay-position {
+        padding: 28px;
+    }
+}  
