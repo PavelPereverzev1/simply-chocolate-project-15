@@ -15,7 +15,7 @@
     />
     
     <script type="module" crossorigin src="/simply-chocolate-project-15/assets/index-e55ebc05.js"></script>
-    <link rel="stylesheet" href="/simply-chocolate-project-15/assets/index-eb22ee49.css">
+    <link rel="stylesheet" href="/simply-chocolate-project-15/assets/index-b3e9f68d.css">
   </head>
   <body>
     <!-- Ростислав -->
@@ -953,27 +953,60 @@
 
     <!-- Модальне вікно з підпискою  -->
 
-    <div class="subscribe-modal">
-      <img src="#" alt="шматочки шоколаду" class="subscribe-modal-image" />
-      <button type="button" class="subscribe-modal-close">
-        <svg class="subscribe-modal-icon" width="12px" height="12px">
-          <use href=""></use>
-        </svg>
-      </button>
-      <h2 class="subscribe-modal-title">
-        Explore our <span>new chocolate</span> first!
-      </h2>
-      <form>
-        <label
-          ><input
-            type="email"
-            placeholder="Enter your email"
-            class="subscribe-modal-input"
-            pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
-            required
-        /></label>
-        <button type="submit" class="subscribe-modal-submit">Submit</button>
-      </form>
+    <div class="subscribe-backdrop is-hidden">
+      <div class="subscribe-modal">
+        <picture class="subscribe-modal-image">
+          <source
+            srcset="
+              ../img/subscribe/subscribe-modal-img-375.jpg    311w,
+              ../img/subscribe/subscribe-modal-img-375@2x.jpg 622w
+            "
+            sizes="(max-width: 767px) 311px, 100vw"
+            media="(max-width:767px)"
+            type="image/jpg"
+          />
+
+          <source
+            srcset="
+              ../img/subscribe/subscribe-modal-img-768.jpg     538w,
+              ../img/subscribe/subscribe-modal-img-768@2x.jpg 1076w
+            "
+            sizes="(min-width: 768px) 538px, 100vw"
+            media="(min-width:768px)"
+            type="image/jpg"
+          />
+          <source srcset="" type="image/jpg" />
+          <source srcset="" type="image/jpg" />
+          <source type="image/jpg" />
+          <source type="image/jpg" />
+          <img
+            src="../img/subscribe/subscribe-modal-img-375.jpg"
+            alt="шматочки шоколаду"
+          />
+        </picture>
+        <button type="button" class="subscribe-modal-close">
+          <svg class="subscribe-modal-icon" width="12px" height="12px">
+            <use href="../img/symbol-defs.svg#icon-x-close"></use>
+          </svg>
+        </button>
+        <div class="subscribe-modal-box">
+          <h2 class="subscribe-modal-title">
+            Explore our <br />
+            <span>new chocolate</span> first!
+          </h2>
+          <form class="subscribe-modal-form">
+            <label
+              ><input
+                type="email"
+                placeholder="Enter your email"
+                class="subscribe-modal-input"
+                pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
+                required
+            /></label>
+            <button type="submit" class="subscribe-modal-submit">Submit</button>
+          </form>
+        </div>
+      </div>
     </div>
   </div>
 </section>
