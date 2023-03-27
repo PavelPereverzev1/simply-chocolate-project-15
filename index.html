@@ -14,8 +14,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
     
-    <script type="module" crossorigin src="/simply-chocolate-project-15/assets/index-3c9b0edc.js"></script>
-    <link rel="stylesheet" href="/simply-chocolate-project-15/assets/index-c179bcd2.css">
+    <script type="module" crossorigin src="/simply-chocolate-project-15/assets/index-453d2b02.js"></script>
+    <link rel="stylesheet" href="/simply-chocolate-project-15/assets/index-25692c4a.css">
   </head>
   <body>
     <!-- Ростислав -->
@@ -59,40 +59,51 @@
       </div>
     </nav>
 
-    <button
-      type="button"
-      class="header_humburger-button js-open-modal"
-      data-modal="5"
-    >
+    <button type="button" class="header_humburger-button js-open-menu">
       <svg height="28" width="28">
         <use href="../img/symbol-defs.svg#icon-humburger-menu"></use>
       </svg>
     </button>
 
-    <div class="overlay js-overlay-modal header_backdrop">
-      <div class="modal header_modal" data-modal="5">
-        <button type="button" class="js-modal-close header_button_close">
-          <svg height="28" width="28" class="header_icon_close">
-            <use href="../img/symbol-defs.svg#icon-x-close"></use>
-          </svg>
-        </button>
+    <div class="js-menu-container header_modal">
+      <button type="button" class="js-close-menu header_button_close">
+        <svg width="28px" height="28px" class="header_icon_close">
+          <use href="../img/symbol-defs.svg#icon-x"></use>
+        </svg>
+      </button>
 
-        <ul class="header_list">
-          <li class="header_item"><a href="" class="header_link">Home</a></li>
-          <li class="header_item">
-            <a href="#" class="header_link">How it’s made?</a>
-          </li>
-          <li class="header_item">
-            <a href="#" class="header_link">Our products</a>
-          </li>
-          <li class="header_item">
-            <a href="#" class="header_link">Top sellers</a>
-          </li>
-          <li class="header_item">
-            <a href="#" class="header_link">Chocolate is loved</a>
-          </li>
-        </ul>
-      </div>
+      <ul class="header_list">
+        <li class="header_item"><a href="" class="header_link">Home</a></li>
+        <li class="header_item">
+          <a href="#" class="header_link">How it’s made?</a>
+        </li>
+        <li class="header_item">
+          <a href="#" class="header_link">Our products</a>
+        </li>
+        <li class="header_item">
+          <a href="#" class="header_link">Top sellers</a>
+        </li>
+        <li class="header_item">
+          <a href="#" class="header_link">Chocolate is loved</a>
+        </li>
+      </ul>
+
+      <ul clas="header_modal-button_list">
+        <li class="header_modal-button_item">
+          <a href="" class="header_socials">
+            <svg height="24" width="24" class="header_social-icon">
+              <use href="../img/symbol-defs.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="" class="header_socials">
+            <svg height="24" width="24">
+              <use href="../img/symbol-defs.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
     </div>
   </div>
 </header>
@@ -902,7 +913,7 @@
     <div class="modal reviews-modal" data-modal="1">
       <button class="js-modal-close reviews-modal_close-btn" type="button">
         <svg class="reviews-modal_close-icon" width="24" height="24">
-          <use href="/simply-chocolate-project-15/assets/symbol-defs-8c3121b3.svg#icon-x-close"></use>
+          <use href="/simply-chocolate-project-15/assets/symbol-defs-ef4f231a.svg#icon-x-close"></use>
         </svg>
       </button>
       <h2 class="rewiews-modal_title">
@@ -930,7 +941,7 @@
         <div class="input-field-wraper">
           <div class="input-prefix-wraper">
             <svg class="reviews-modal_country-icon">
-              <use href="/simply-chocolate-project-15/assets/symbol-defs-8c3121b3.svg#icon-ukraine"></use>
+              <use href="/simply-chocolate-project-15/assets/symbol-defs-ef4f231a.svg#icon-ukraine"></use>
             </svg>
             <span class="phone-prefix">+380</span>
           </div>
@@ -956,7 +967,7 @@
     <div class="modal reviews-thanks-modal" data-modal="2">
       <button class="js-modal-close reviews-thanks-modal_close-btn" type="button">
         <svg class="reviews-thanks-modal_close-icon">
-          <use href="/simply-chocolate-project-15/assets/symbol-defs-8c3121b3.svg#icon-x-close"></use>
+          <use href="/simply-chocolate-project-15/assets/symbol-defs-ef4f231a.svg#icon-x-close"></use>
         </svg>
       </button>
       <h2 class="reviews-thanks-modal_title">thank you <br> for your feedback!</h2>
