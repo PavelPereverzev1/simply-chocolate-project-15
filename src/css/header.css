@@ -54,9 +54,24 @@
   width: 100%;
 }
 
-.header_backdrop {
-  opacity: 0;
-  visibility: hidden;
+/*  */
+
+.header_modal-button_list {
+  display: flex;
+}
+
+.header_modal-button_item {
+  fill: #fff;
+}
+
+.header_social-icon {
+  fill: #fff;
+}
+
+/* header_menu-button */
+
+.header_modal {
+  display: none;
   position: fixed;
   top: 0;
   right: 0;
@@ -66,17 +81,12 @@
   background-color: #1e1823;
 }
 
-.header_modal {
-  opacity: 0;
-  visibility: hidden;
-  height: 100%;
-  width: 100%;
-  z-index: 10;
-  /* display: flex; */
+@media screen and (min-width: 768px) {
+  .header_modal {
+    width: 290px;
+  }
 }
 
-.header_backdrop.active,
-.header_modal.active {
-  opacity: 1;
-  visibility: visible;
+.header_modal.is-open {
+  display: block;
 }

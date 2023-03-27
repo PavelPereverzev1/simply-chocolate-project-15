@@ -29,7 +29,6 @@
 <symbol id="icon-humburger-menu" viewBox="0 0 32 32">
 <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2.286" d="M4 16h24M4 8h24M4 24h24"/>
 </symbol>
-</symbol>
 <symbol id="icon-instagram" viewBox="0 0 32 32">
 <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2.667" d="M22.667 2.667H9.334a6.667 6.667 0 0 0-6.667 6.667v13.333a6.667 6.667 0 0 0 6.667 6.667h13.333a6.667 6.667 0 0 0 6.667-6.667V9.334a6.667 6.667 0 0 0-6.667-6.667z"/>
 <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2.667" d="M21.334 15.16a5.329 5.329 0 0 1-2.878 5.546 5.338 5.338 0 0 1-6.169-.992 5.33 5.33 0 0 1 1.316-8.505 5.336 5.336 0 0 1 6.228.962 5.328 5.328 0 0 1 1.504 2.989zM23.333 8.667h.013"/>
@@ -43,7 +42,9 @@
 <symbol id="icon-x" viewBox="0 0 32 32">
 <path d="M19.8334 8.16675L8.16675 19.8334M8.16675 8.16675L19.8334 19.8334" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </symbol>
-<symbol id="icon-close-modal" viewBox="0 0 32 32"><path stroke-linejoin="round" stroke-linecap="round" stroke-width="2.286" d="M22.667 9.333 9.334 22.666M9.333 9.333l13.333 13.333"/></symbol>
+<symbol id="icon-close-modal" viewBox="0 0 32 32">
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4.5714" d="M29.334 2.667l-26.667 26.667M2.667 2.667l26.667 26.667"></path>
+</symbol>
 <symbol id="icon-x-close" viewBox="0 0 32 32">
 <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2.286" d="M24 8 8 24M8 8l16 16"/>
 </symbol>
