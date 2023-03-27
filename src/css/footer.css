@@ -57,6 +57,11 @@
 .footer-social-list-icon {
   fill: #ffffff;
 }
+.footer-social-list-icon:hover,
+.footer-social-list-icon:focus {
+  fill: #FD9222;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
 .footer-anchor-text {
   font-family: 'Montserrat';
   font-style: normal;
