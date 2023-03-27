@@ -100,10 +100,10 @@
 
   background-color: rgba(46, 47, 66, 0.5);
 }
-/* .subscribe-backdrop.is-hidden {
+.subscribe-backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
-} */
+}
 
 .subscribe-modal {
   position: absolute;
