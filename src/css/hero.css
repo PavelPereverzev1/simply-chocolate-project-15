@@ -121,6 +121,15 @@
 
     background: #FD9222;
     color: #FFFFFF;
+
+    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+}
+
+.hero_btn-buy:hover,
+.hero-btn-buy:focus {
+    background: #FCF1E0;
+    color: #FD9222;
 }
 
 .hero_btn-made {
@@ -132,8 +141,16 @@
     border-radius: 100px;
     background-color: transparent;
     color: #FFFFFF;
-
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.hero_btn-made:hover,
+.hero-btn-made:focus {
+    border: 1px solid #FD9222;;
+    color: #FD9222;
+}
+
+
 
 .hero_span {
     font-family: 'Montserrat', sans-serif;
@@ -143,6 +160,12 @@
     letter-spacing: -0.03em;
 
     color: #FFFFFF;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero_link:hover .hero_span,
+.hero_link:focus .hero_span {
+    color: #FD9222;
 }
 
 @media (min-width: 1200px) {
@@ -161,15 +184,25 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero_link:hover .hero_icon,
+.hero_link:focus .hero_icon {
+    background-color: #FD9222;
 }
 
 .hero_svg {
     width: 16px;
     height: 16px;
     fill: #FD9222;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
+.hero_link:hover .hero_svg,
+.hero_link:focus .hero_svg {
+    fill: #FFFFFF;
+}
 
 .hero_link {
     display: flex;
