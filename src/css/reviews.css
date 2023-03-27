@@ -1,5 +1,6 @@
 .reviews_title,
-.rewiews-modal_title {
+.rewiews-modal_title,
+.reviews-thanks-modal_title {
   margin-bottom: 22px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
@@ -68,6 +69,7 @@
   transform: translate(-50%, -50%);
 }
 
+/* slider============ */
 .rewiews-slider {
   max-width: 350px;
   height: 300px;
@@ -157,7 +159,328 @@
 /* Стили для активных классов подложки и окна */
 
 .reviews-modal.active,
-.reviews-backdrop.active {
+.reviews-backdrop.active,
+.reviews-thanks-modal.active {
   opacity: 1;
   visibility: visible;
+}
+
+.reviews-modal_close-btn,
+.reviews-thanks-modal_close-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  background-color: #fafafa;
+  border: none;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+}
+
+.reviews-modal_close-icon {
+  stroke: #111111;
+  width: 24px;
+  height: 24px;
+}
+
+.rewiews-modal_title {
+  max-width: 246px;
+  text-align: left;
+  margin-bottom: 32px;
+}
+
+.modal-form_input,
+.modal-form_message {
+  width: 100%;
+  margin-bottom: 14px;
+  padding: 14px 18px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  border-radius: 8px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form_input {
+  height: 45px;
+}
+
+.modal-form_input__iconed {
+  padding-left: 106px;
+}
+
+.modal-form_message {
+  height: 91px;
+  resize: none;
+  margin-bottom: 18px;
+}
+
+.modal-form_input:focus,
+.modal-form_message:focus {
+  border-color: #fd9222;
+  outline: none;
+}
+
+.modal-form_input::placeholder,
+.modal-form_message::placeholder {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: -0.02em;
+  color: rgba(64, 64, 64, 0.3);
+}
+
+.reviews-modal_country-icon {
+  width: 24px;
+  height: 18px;
+}
+
+.phone-prefix {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: -0.02em;
+  color: #000;
+}
+
+.input-field-wraper {
+  position: relative;
+}
+
+.input-prefix-wraper {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  left: 18px;
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  width: 74px;
+  height: 25px;
+  border-right: 1px solid rgba(64, 64, 64, 0.3);
+}
+
+.modal-form_submit-btn {
+  padding: 12px 28px;
+  background-color: #fd9222;
+  height: 41px;
+  min-width: 93px;
+  border-radius: 100px;
+  border: none;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  color: #ffffff;
+  display: block;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form_submit-btn:hover,
+.modal-form_submit-btn:focus {
+  color: #fd9222;
+  background-color: #fcf1e0;
+}
+
+.reviews-thanks-modal {
+  /* Скрываем окна  */
+  opacity: 0;
+  visibility: hidden;
+  /*  Установаем ширину окна  */
+  width: 100%;
+  max-width: 310px;
+  height: 350px;
+  /*  Центрируем и задаем z-index */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 30; /* Должен быть выше чем у подложки*/
+
+  /*  Побочные стили   */
+  overflow: hidden;
+  border-radius: 15px;
+  background-color: #fd9222;
+  padding: 84px 24px 84px 58px;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.reviews-thanks-modal_close-btn {
+  width: 28px;
+  height: 28px;
+  background-color: #fcf1e0;
+  border-radius: 50%;
+}
+
+.reviews-thanks-modal_close-icon {
+  width: 16px;
+  height: 16px;
+  stroke: #d44528;
+}
+
+.reviews-thanks-modal_title {
+  margin-bottom: 8px;
+  text-align: left;
+  color: #fcf1e0;
+}
+
+.reviews-thanks-modal_text {
+  max-width: 175px;
+  text-align: left;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+
+.reviews-thanks-modal::after {
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  content: url(/img/reviews/chocolate-bar-mobile.webp);
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 1200px) and (min-resolution: 192dpi),
+  screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .reviews-thanks-modal::after {
+    content: url(/img/reviews/chocolate-bar-mobile@2x.webp);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .rewiews-slider {
+    max-width: 704px;
+  }
+
+  .rewiews-card_content {
+    max-width: 344px;
+  }
+
+  .rewiews-modal_title,
+  .reviews_title {
+    margin-bottom: 40px;
+  }
+
+  .reviews-modal {
+    /*  Установаем ширину окна  */
+    width: 100%;
+    max-width: 517px;
+    height: 631px;
+    /*  Побочные стили   */
+    padding: 40px;
+  }
+
+  .modal-form_input,
+  .modal-form_message {
+    width: 100%;
+    margin-bottom: 19px;
+    padding: 22px 24px;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.22;
+  }
+  .modal-form_input {
+    height: 66px;
+  }
+
+  .modal-form_input::placeholder,
+  .modal-form_message::placeholder {
+    font-size: 18px;
+    line-height: 1.22;
+  }
+
+  .modal-form_message {
+    height: 137px;
+  }
+
+  .reviews-modal_country-icon {
+    width: 32px;
+    height: 24px;
+  }
+
+  .phone-prefix {
+    font-size: 18px;
+    line-height: 1.22;
+  }
+
+  .input-prefix-wraper {
+    left: 24px;
+    column-gap: 18px;
+    width: 125px;
+    height: 32px;
+  }
+
+  .modal-form_input__iconed {
+    padding-left: 177px;
+  }
+
+  .reviews-thanks-modal {
+    width: 100%;
+    max-width: 516px;
+    height: 414px;
+    padding: 163px 49px 163px 170px;
+  }
+
+  .reviews-thanks-modal_close-btn {
+    width: 40px;
+    height: 40px;
+    top: 24px;
+    right: 24px;
+    background-color: #fcf1e0;
+    border-radius: 50%;
+  }
+
+  .reviews-thanks-modal_close-icon {
+    width: 22px;
+    height: 22px;
+    stroke: #d44528;
+  }
+
+  .reviews-thanks-modal_title {
+    margin-bottom: 8px;
+    font-size: 24px;
+    line-height: 1.17;
+    text-align: left;
+    color: #fcf1e0;
+  }
+  .reviews-thanks-modal_text {
+    max-width: 100%;
+    font-size: 18px;
+    line-height: 1.33;
+  }
+
+  .reviews-thanks-modal::after {
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    content: url(/img/reviews/chocolate-bar-desktop.webp);
+  }
+
+  @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+    screen and (min-width: 1200px) and (min-resolution: 192dpi),
+    screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+    .reviews-thanks-modal::after {
+      content: url(/img/reviews/chocolate-bar-desktop2x.webp);
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .rewiews-slider {
+    max-width: 1136px;
+  }
+
+  .rewiews-card_content {
+    max-width: 360px;
+  }
+
+  .modal-form_input__iconed {
+    padding-left: 106px;
+  }
 }
