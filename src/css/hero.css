@@ -116,7 +116,8 @@
     width: 120px;
     height: 41px;
     border-radius: 100px;
-    padding: 8px 24px;
+    padding: 12px 28px;
+    border: none;
 
     background: #FD9222;
     color: #FFFFFF;
