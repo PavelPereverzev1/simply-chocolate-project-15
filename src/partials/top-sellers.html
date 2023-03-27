@@ -1,0 +1,180 @@
+<section class="sellers section">
+  <div class="container container-mobile">
+    <h2 class="sellers__title container-mobile__title"><span class="sellers__title_accent">Top</span> sellers</h2>
+    <img class="sellers__img container-mobile__img"
+      srcset="
+        ../img/top-sellers/mobile1-335.jpg 335w,
+        ../img/top-sellers/mobile1-670.jpg 670w
+      "
+      src="../img/top-sellers/mobile1-335.jpg"
+      alt=""
+    />
+    <p class="container-mobile__description">
+      Crazy enough chocolate originates from a bean just like the coffee bean
+      called Cacao. Cacao has been around for thousands of years and was first
+      discovered by the Native American tribe called the Mayans.
+    </p>
+    <img class="sellers__img container-mobile__img"
+      srcset="
+        ../img/top-sellers/mobile2-335.jpg 335w,
+        ../img/top-sellers/mobile2-670.jpg 670w
+      "
+      src="../img/top-sellers/mobile2-335.jpg"
+      alt=""
+    />
+
+    <button class="sellers__button" type="button">Buy now</button>
+  </div>
+
+  <!-- ===========================
+    another view desktop/tablet 
+    first varient will be hidden
+    ================================ -->
+
+  <div class="container container-desktop-tablet">
+    <h2 class="sellers__title"><span class="sellers__title_accent">Top</span> sellers</h2>
+    <ul class="sellers__img-list img-list">
+      <li class="img-list__list-item">
+        <img class="sellers__img "
+          srcset="
+            ../img/top-sellers/tablet1-344.jpg  344w,
+            ../img/top-sellers/tablet1-688.jpg  688w,
+            ../img/top-sellers/desktop1-368.jpg 368w,
+            ../img/top-sellers/desktop1-736.jpg 736w
+          "
+          sizes="(min width: 1200px) 368px, (min width: 768px) 344px"
+          src="../img/top-sellers/mobile1-335.jpg"
+          alt=""
+        />
+      </li>
+      <li class="img-list__list-item">
+        <img class="sellers__img "
+          srcset="
+            ../img/top-sellers/tablet2-344.jpg  344w,
+            ../img/top-sellers/tablet2-688.jpg  688w,
+            ../img/top-sellers/desktop2-368.jpg 368w,
+            ../img/top-sellers/desktop2-736.jpg 736w
+          "
+          sizes="(min width: 1200px) 368px, (min width: 768px) 344px"
+          src="../img/top-sellers/mobile2-335.jpg"
+          alt=""
+        />
+      </li>
+      <li class="img-list__list-item img-list__list-item_tablet-hidden">
+        <img class="sellers__img "
+          srcset="
+            ../img/top-sellers/tablet3-344.jpg  344w,
+            ../img/top-sellers/tablet3-688.jpg  688w,
+            ../img/top-sellers/desktop3-368.jpg 368w,
+            ../img/top-sellers/desktop3-736.jpg 736w
+          "
+          sizes="(min width: 1200px) 368px, (min width: 768px) 344px"
+          src="../img/top-sellers/mobile3-335.jpg"
+          alt=""
+        />
+      </li>
+    </ul>
+    <div class="sellers__flex-container">
+      <p class="container-desktop-tablet__description">
+        Crazy enough chocolate originates from a bean just like the coffee bean
+        called Cacao. Cacao has been around for thousands of years and was first
+        discovered by the Native American tribe called the Mayans.
+      </p>
+      <button class="sellers__button" type="button">Buy now</button>
+    </div>
+  </div>
+  <!-- ==================
+      markup modals
+   ================== -->
+  
+   <div class="backdrop">
+    <div class="order-modal modal">
+      <h2><span>buy</span> now</h2>
+
+      <!-- products mobile version
+        scrolling products will be hidden on tablet/desktop -->
+      <div class="scroll-order">
+        <ul>
+          <li>
+            <img
+              srcset="
+                ../img/top-sellers/mobile1-167.png 167w,
+                ../img/top-sellers/mobile1-334.png 334w
+              "
+              src="../img/top-sellers/mobile1-167.png"
+              alt=""
+            />
+            <span>100 g</span>
+          </li>
+          <img
+              srcset="
+                ../img/top-sellers/mobile2-167.png 167w,
+                ../img/top-sellers/mobile2-334.png 334w
+              "
+              src="../img/top-sellers/mobile2-167.png"
+              alt=""
+            />
+            <span>200 g</span>
+          </li>
+          <img
+              srcset="
+                ../img/top-sellers/mobile3-167.png 167w,
+                ../img/top-sellers/mobile3-334.png 334w
+              "
+              src="../img/top-sellers/mobile3-167.png"
+              alt=""
+            />
+            <span>300 g</span>
+          </li>
+        </ul>
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      <!-- products list visible on tablet/desktop -->
+      <ul>
+          <li>
+            <img
+              srcset="
+                ../img/top-sellers/tablet1-120.png 120w,
+                ../img/top-sellers/tablet1-240.png 240w
+              "
+              src="../img/top-sellers/tablet1-120.png"
+              alt=""
+            />
+            <span>100 g</span>
+          </li>
+          <img
+              srcset="
+                ../img/top-sellers/tablet2-120.png 120w,
+                ../img/top-sellers/tablet2-240.png 240w
+              "
+              src="../img/top-sellers/tablet2-120.png"
+              alt=""
+            />
+            <span>200 g</span>
+          </li>
+          <img
+              srcset="
+                ../img/top-sellers/tablet3-120.png 120w,
+                ../img/top-sellers/tablet3-240.png 240w
+              "
+              src="../img/top-sellers/tablet3-120.png"
+              alt=""
+            />
+            <span>300 g</span>
+          </li>
+        </ul>
+    </div>
+  </div>
+  <div class="pop-up">
+    <p>thank you!</p>
+    <p>
+      We are glad that you ordered our chocolate and we are giving you a 20%
+      discount on all our products.
+    </p>
+  </div>
+    
+</section>

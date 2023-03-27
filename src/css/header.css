@@ -1,10 +1,82 @@
 .header_logo {
-  font-family: 'Montserrat';
+  display: flex;
+  align-items: center;
   font-style: italic;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.03em;
+  color: var(--clr-text-primary);
 
-  color: #111111;
+  padding-top: 25px;
+  padding-bottom: 19px;
+}
+
+.header_logo_secondary {
+  font-style: normal;
+  margin-left: 3px;
+}
+
+.header_logo_icon {
+  margin-left: 4px;
+}
+
+.header_container {
+  display: flex;
+  align-items: center;
+}
+
+.header_main {
+  display: none;
+}
+
+.header_humburger-button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  height: 28px;
+  width: 28px;
+  stroke: #111111;
+  margin-left: auto;
+}
+
+.header_button_close {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  height: 28px;
+  width: 28px;
+  stroke: #fff;
+}
+
+.header_icon_close {
+  height: 100%;
+  width: 100%;
+}
+
+.header_backdrop {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 220px;
+
+  background-color: #1e1823;
+}
+
+.header_modal {
+  opacity: 0;
+  visibility: hidden;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  /* display: flex; */
+}
+
+.header_backdrop.active,
+.header_modal.active {
+  opacity: 1;
+  visibility: visible;
 }
