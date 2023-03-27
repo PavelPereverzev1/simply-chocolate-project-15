@@ -70,8 +70,18 @@
 .footer-anchorlinks:not(:last-child){
     margin-bottom: 18px;
 }
-.footer-social-media{
+.social-list-footer{
     display: flex;
+}
+.footer-contacts{
+  display: flex;
+}
+.footer-social-media{
+  display: flex;
+}
+.footer-block{
+  display: flex;
+  justify-content: center;
 }
 .footer-container {
   width: 100%;
