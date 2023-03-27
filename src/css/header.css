@@ -6,7 +6,7 @@
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.03em;
-  color: #111111;
+  color: var(--clr-text-primary);
 
   padding-top: 25px;
   padding-bottom: 19px;
@@ -31,6 +31,9 @@
 }
 
 .header_humburger-button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
   height: 28px;
   width: 28px;
   stroke: #111111;
@@ -38,9 +41,12 @@
 }
 
 .header_button_close {
+  background-color: transparent;
+  border: none;
+  padding: 0;
   height: 28px;
   width: 28px;
-  stroke: #ffffff;
+  stroke: #fff;
 }
 
 .header_icon_close {
