@@ -1,0 +1,227 @@
+.subscribe-section {
+  padding: 62px 24.5px 63px 24.5px;
+  margin: 0 auto;
+
+  background-image: url(/img/subscribe/subscribe-bg-375.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .subscribe-section {
+    background-image: url(/img/subscribe/subscribe-modal-img-375@2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .subscribe-section.container {
+    padding: 72px 150px;
+
+    background-image: url(/img/subscribe/subscribe-bg-768.jpg);
+  }
+}
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .subscribe-section {
+    background-image: url(/img/subscribe/subscribe-modal-img-768@2x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscribe-section.container {
+    padding-left: 365px;
+    padding-right: 365px;
+
+    background-image: url(/img/subscribe/subscribe-bg-1200.jpg);
+  }
+}
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .subscribe-section {
+    background-image: url(/img/subscribe/subscribe-modal-img-1200@2x.jpg);
+  }
+}
+
+.subscribe-section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.subscribe-title {
+  margin-bottom: 24px;
+
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.28;
+  letter-spacing: -0.03em;
+  text-align: center;
+  color: var(--clr-text-secondary);
+}
+@media screen and (min-width: 768px) {
+  .subscribe-title {
+    font-size: 24px;
+    line-height: 1.17;
+  }
+}
+.subscribe-text {
+  margin-bottom: 24px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: var(--clr-text-secondary);
+}
+.subscribe-button {
+  padding: 12px 28px;
+
+  color: var(--clr-text-secondary);
+  background-color: var(--clr-back-ground-modified);
+  border: none;
+  border-radius: 100px;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+}
+@media screen and (min-width: 768px) {
+  .subscribe-button {
+    padding: 14px 40px;
+  }
+}
+/* Модальне вікно */
+
+.subscribe-backdrop {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+
+  background-color: rgba(46, 47, 66, 0.5);
+}
+
+.subscribe-modal {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  z-index: 30;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+
+  opacity: 0;
+  visibility: hidden;
+
+  background-color: var(--clr-back-ground-primary);
+  min-width: 311px;
+  min-height: 350px;
+
+  border-radius: 10px;
+}
+.subscribe-modal.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe-modal {
+    min-width: 538px;
+  }
+}
+
+.subscribe-modal-close {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 14px;
+  top: 15px;
+
+  background-color: transparent;
+  border: none;
+}
+.subscribe-modal-icon {
+  stroke: var(--clr-text-secondary);
+}
+
+.subscribe-modal-box {
+  margin-top: 32px;
+  padding: 0 24px 32px 24px;
+}
+
+.subscribe-modal-title {
+  margin-bottom: 24px;
+
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+
+  color: var(--clr-text-primary);
+}
+@media screen and (min-width: 768px) {
+  .subscribe-modal-title {
+    font-size: 24px;
+    line-height: 1.17;
+  }
+}
+
+.subscribe-modal-title > span {
+  color: var(--clr-text-modified);
+}
+
+.subscribe-modal-form {
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+  .subscribe-modal-form {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.subscribe-modal-input {
+  padding: 13px 22px 13px 22px;
+  border-color: rgba(64, 64, 64, 0.3);
+  border-width: 1px;
+  border-radius: 100px;
+
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: -0.02em;
+}
+@media screen and (min-width: 768px) {
+  .subscribe-modal-input {
+    padding-right: 100px;
+
+    font-size: 18px;
+  }
+}
+
+.subscribe-modal-submit {
+  position: absolute;
+  right: 0;
+
+  padding: 14px 22px 14px 22px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+
+  color: var(--clr-text-secondary);
+  background-color: var(--clr-back-ground-modified);
+  border: none;
+  border-radius: 100px;
+}
+@media screen and (min-width: 768px) {
+  .subscribe-modal-submit {
+    position: static;
+
+    padding-left: 42px;
+    padding-right: 42px;
+  }
+}

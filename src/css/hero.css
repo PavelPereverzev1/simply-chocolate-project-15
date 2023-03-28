@@ -1,0 +1,208 @@
+.hero-container {
+    background-image: url(../img/hero/chocolate-covered-cocoa-powder.jpg);
+    background-size: cover;
+    background-position: 78%;
+    height: 621px;
+    border-radius: 30px;
+
+}
+
+@media (min-width: 768px) {
+    .hero-container {
+        background-position: 73%;
+    }
+}
+
+@media (min-width: 1200px) {
+     .hero-container {
+         background-position: center;
+     }
+ }
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx){
+    .hero-container {
+        background-image: url(../img/hero/chocolate-covered-cocoa-powder@2x.jpg);
+    }
+}
+
+
+@media (min-width: 768px) {
+    .hero-container {
+        height: 890px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .hero-container {
+        height: 600px;
+    }
+}
+
+.hero_content {
+    padding: 395px 20px 21px;
+}
+
+@media (min-width: 768px) {
+    .hero_content {
+            padding: 671px 40px 40px;
+     }
+}
+
+@media (min-width: 1200px) {
+    .hero_content {
+        padding-top: 381px;
+    }
+}
+
+@media (min-width: 768px) {
+    .hero_lower {
+        display: flex;
+        gap: 153px;
+        align-items: center;
+    }
+}
+
+@media (min-width: 1200px) {
+    .hero_lower {
+        gap: 585px;
+    }
+}
+
+.hero_title {
+    max-width: 299px;
+    margin-bottom: 32px;
+    
+    font-weight: var(--font-weight-medium);
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+
+    color: var(--clr-text-secondary);
+}
+
+@media (min-width: 768px) {
+    .hero_title {
+        max-width: 484px;
+
+        font-size: 28px;
+        line-height: 1.21;
+    }
+}
+
+
+.hero_btn-container {
+    display: flex;
+    margin-bottom: 32px;
+    gap: 14px;
+}
+
+@media (min-width: 768px) {
+    .hero_btn-container {
+        margin-bottom: 0;
+    }
+}
+
+.hero_btn {
+    font-weight: var(--font-weight-semi-bold);
+    font-size: 14px;
+    line-height: 1.21;
+}
+
+.hero_btn-buy {
+    width: 120px;
+    height: 41px;
+    border-radius: 100px;
+    padding: 12px 28px;
+    border: none;
+
+    background: var(--clr-text-modified);
+    color: var(--clr-text-secondary);
+
+    transition: background 250ms var(--time-function), color 250ms var(--time-function);
+    
+}
+
+.hero_btn-buy:hover,
+.hero-btn-buy:focus {
+    background: var(--clr-text-modal-modified);
+    color: var(--clr-text-modified);
+}
+
+.hero_btn-made {
+    width: 159px;
+    height: 41px;
+    padding: 10px 26px;
+
+    border: 1px solid var(--clr-text-secondary);
+    border-radius: 100px;
+    background-color: transparent;
+    color: var(--clr-text-secondary);
+    transition: border 250ms var(--time-function), color 250ms var(--time-function);
+}
+
+.hero_btn-made:hover,
+.hero-btn-made:focus {
+    border: 1px solid var(--clr-text-modified);
+    color: var(--clr-text-modified);
+}
+
+
+
+.hero_span {
+    font-weight: var(--font-weight-medium);
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: -0.03em;
+
+    color: var(--clr-text-secondary);
+    transition: color 250ms var(--time-function);
+}
+
+.hero_link:hover .hero_span,
+.hero_link:focus .hero_span {
+    color: var(--clr-text-modified);
+}
+
+@media (min-width: 1200px) {
+    .hero_span {
+        font-size: 14px;
+        line-height: 1.28;
+    }
+}
+
+.hero_icon {
+    width: 28px;
+    height: 28px;
+    background-color: var(--clr-text-secondary);
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms var(--time-function);
+}
+
+.hero_link:hover .hero_icon,
+.hero_link:focus .hero_icon {
+    background-color: var(--clr-text-modified);
+}
+
+.hero_svg {
+    width: 16px;
+    height: 16px;
+    fill: var(--clr-text-modified);
+    transition: fill 250ms var(--time-function);
+}
+
+.hero_link:hover .hero_svg,
+.hero_link:focus .hero_svg {
+    fill: var(--clr-text-secondary);;
+}
+
+.hero_link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
