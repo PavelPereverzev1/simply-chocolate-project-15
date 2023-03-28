@@ -4,6 +4,7 @@
 
   background-image: url(/img/subscribe/subscribe-bg-375.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
 }
 @media screen and (min-device-pixel-ratio: 2),
   screen and (min-resolution: 192dpi),
@@ -13,7 +14,7 @@
   }
 }
 @media screen and (min-width: 768px) {
-  .subscribe-section {
+  .subscribe-section.container {
     padding: 72px 150px;
 
     background-image: url(/img/subscribe/subscribe-bg-768.jpg);
@@ -27,7 +28,10 @@
   }
 }
 @media screen and (min-width: 1200px) {
-  .subscribe-section {
+  .subscribe-section.container {
+    padding-left: 365px;
+    padding-right: 365px;
+
     background-image: url(/img/subscribe/subscribe-bg-1200.jpg);
   }
 }
@@ -39,7 +43,7 @@
   }
 }
 
-.subscribe-section > .container {
+.subscribe-section {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -100,17 +104,17 @@
 
   background-color: rgba(46, 47, 66, 0.5);
 }
-.subscribe-backdrop.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-}
 
 .subscribe-modal {
-  position: absolute;
+  position: fixed;
   left: 50%;
   top: 50%;
+  z-index: 30;
   transform: translate(-50%, -50%);
   overflow: hidden;
+
+  opacity: 0;
+  visibility: hidden;
 
   background-color: var(--clr-back-ground-primary);
   min-width: 311px;
@@ -118,6 +122,11 @@
 
   border-radius: 10px;
 }
+.subscribe-modal.active {
+  opacity: 1;
+  visibility: visible;
+}
+
 @media screen and (min-width: 768px) {
   .subscribe-modal {
     min-width: 538px;
@@ -136,7 +145,7 @@
   border: none;
 }
 .subscribe-modal-icon {
-  fill: var(--clr-text-secondary);
+  stroke: var(--clr-text-secondary);
 }
 
 .subscribe-modal-box {
