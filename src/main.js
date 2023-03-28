@@ -244,14 +244,14 @@ document.addEventListener('DOMContentLoaded', function () {
 (() => {
   const refs = {
     openModalBtn: document.querySelector('[data-modal-open]'),
-    modal2: document.querySelector('[data-modal]'),
+    modal: document.querySelector('[data-modal]'),
     iframe: document.querySelector('.iframe'),
   };
 
   refs.openModalBtn.addEventListener('click', toggleModal);
 
   function toggleModal() {
-    refs.modal2.classList.toggle('visually-hidden');
+    refs.modal.classList.toggle('visually-hidden');
     refs.iframe.setAttribute(
       'src',
       'https://www.youtube-nocookie.com/embed/JgzkfO8nYKo?autoplay=1&autohide=1'

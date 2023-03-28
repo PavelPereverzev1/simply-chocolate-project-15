@@ -68,6 +68,15 @@
     margin: 0;
 }
 
+.tablet,
+.desktop {
+    display: none;
+}
+
+.mobile {
+    display: block;
+}
+
 .iframe {
     width: 335px;
     height: 500px;
@@ -111,15 +120,6 @@
     border: 1px solid #ECEDED;
     border-radius: 50%;
     background-color: #4C4C4C;
-}
-
-
-@media screen and (min-width: 375px) {
-
-    .tablet,
-    .desktop {
-        display: none;
-    }
 }
 
 
