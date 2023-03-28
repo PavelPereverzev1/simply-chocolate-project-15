@@ -1,5 +1,5 @@
-.hero-container {
-    background-image: url(../img/hero/chocolate-covered-cocoa-powder.jpg);
+.hero_container {
+    background-image: url(/img/hero/chocolate-covered-cocoa-powder.jpg);
     background-size: cover;
     background-position: 78%;
     height: 621px;
@@ -8,13 +8,13 @@
 }
 
 @media (min-width: 768px) {
-    .hero-container {
+    .hero_container {
         background-position: 73%;
     }
 }
 
 @media (min-width: 1200px) {
-     .hero-container {
+     .hero_container {
          background-position: center;
      }
  }
@@ -22,21 +22,33 @@
 @media (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
 (min-resolution: 2dppx){
-    .hero-container {
-        background-image: url(../img/hero/chocolate-covered-cocoa-powder@2x.jpg);
+    .hero_container {
+        background-image: url(/img/hero/chocolate-covered-cocoa-powder@2x.jpg);
     }
 }
 
 
 @media (min-width: 768px) {
-    .hero-container {
+    .hero_container {
         height: 890px;
     }
 }
 
 @media (min-width: 1200px) {
-    .hero-container {
+    .hero_container {
         height: 600px;
+    }
+}
+
+
+.container-padding {
+    padding-bottom: 72px;
+}
+
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .container-padding {
+        padding-bottom: 50px;
     }
 }
 
@@ -140,6 +152,7 @@
     background-color: transparent;
     color: var(--clr-text-secondary);
     transition: border 250ms var(--time-function), color 250ms var(--time-function);
+    scroll-behavior: smooth;
 }
 
 .hero_btn-made:hover,
@@ -205,4 +218,5 @@
     display: flex;
     align-items: center;
     gap: 12px;
+    scroll-behavior: smooth;
 }
