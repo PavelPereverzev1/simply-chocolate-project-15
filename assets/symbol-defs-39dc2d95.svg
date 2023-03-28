@@ -48,12 +48,12 @@
 <symbol id="icon-x-close" viewBox="0 0 32 32">
 <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2.286" d="M24 8 8 24M8 8l16 16"/>
 </symbol>
-
-
-
 <symbol id="icon-icon-close" viewBox="0 0 32 32">
 <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2.286" d="M22.667 9.333 9.334 22.666M9.333 9.333l13.333 13.333"/>
 </symbol>
-
+<symbol id="icon-play" viewBox="0 0 32 32">
+<path fill="#fff" style="fill: var(--color1, #fff)" d="M10.909 24v-15.273l14.545 7.636-14.545 7.636z"></path>
+<path fill="none" stroke="#fff" style="stroke: var(--color2, #fff)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="3" stroke-width="0.7273" d="M31.636 16c0 8.636-7.001 15.636-15.636 15.636s-15.636-7.001-15.636-15.636c0-8.636 7.001-15.636 15.636-15.636s15.636 7.001 15.636 15.636z"></path>
+</symbol>
 </defs>
 </svg>
