@@ -41,13 +41,13 @@
 }
 
 
-.container-padding {
+.hero {
     padding-bottom: 72px;
 }
 
 
 @media (min-width: 768px) and (max-width: 1199px) {
-    .container-padding {
+    .hero {
         padding-bottom: 50px;
     }
 }
