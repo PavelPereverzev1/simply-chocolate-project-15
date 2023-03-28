@@ -11,7 +11,7 @@
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
   .subscribe-section {
-    background-image: url(/img/subscribe/subscribe-modal-img-375@2x.jpg);
+    background-image: url(/img/subscribe/subscribe-bg-375@2x.jpg);
   }
 }
 @media screen and (min-width: 768px) {
@@ -25,7 +25,7 @@
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
   .subscribe-section {
-    background-image: url(/img/subscribe/subscribe-modal-img-768@2x.jpg);
+    background-image: url(/img/subscribe/subscribe-bg-768@2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -40,7 +40,7 @@
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
   .subscribe-section {
-    background-image: url(/img/subscribe/subscribe-modal-img-1200@2x.jpg);
+    background-image: url(/img/subscribe/subscribe-bg-1200@2x.jpg);
   }
 }
 
