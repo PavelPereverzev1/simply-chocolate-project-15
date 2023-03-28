@@ -86,6 +86,14 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 1.21;
+
+  transition: color 250ms var(--time-function),
+    background-color 250ms var(--time-function);
+}
+.subscribe-button:hover,
+.subscribe-button:focus {
+  color: var(--clr-text-modified);
+  background-color: var(--clr-text-modal-modified);
 }
 @media screen and (min-width: 768px) {
   .subscribe-button {
@@ -121,6 +129,9 @@
   min-height: 350px;
 
   border-radius: 10px;
+
+  transition: opacity 250ms var(--time-function),
+    visibility 250ms var(--time-function);
 }
 .subscribe-modal.active {
   opacity: 1;
@@ -143,9 +154,18 @@
 
   background-color: transparent;
   border: none;
-}
-.subscribe-modal-icon {
+
   stroke: var(--clr-text-secondary);
+
+  transition: stroke 250ms var(--time-function);
+}
+.subscribe-modal-close:hover,
+.subscribe-modal-close:focus {
+  stroke: var(--clr-text-modified);
+}
+
+.subscribe-modal-icon {
+  stroke: inherit;
 }
 
 .subscribe-modal-box {
@@ -207,15 +227,23 @@
   position: absolute;
   right: 0;
 
-  padding: 14px 22px 14px 22px;
+  padding: 13px 21px 13px 21px;
   font-weight: 600;
   font-size: 14px;
   line-height: 1.21;
 
   color: var(--clr-text-secondary);
   background-color: var(--clr-back-ground-modified);
-  border: none;
+  border: 1px solid var(--clr-text-modified);
   border-radius: 100px;
+
+  transition: color 250ms var(--time-function),
+    background-color 250ms var(--time-function);
+}
+.subscribe-modal-submit:hover,
+.subscribe-modal-submit:focus {
+  color: var(--clr-text-modified);
+  background-color: var(--clr-back-ground-primary);
 }
 @media screen and (min-width: 768px) {
   .subscribe-modal-submit {
