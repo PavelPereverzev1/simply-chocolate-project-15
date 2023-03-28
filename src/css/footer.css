@@ -43,7 +43,7 @@
   letter-spacing: -0.02em;
   color: #ffffff;
   margin-bottom: 4px;
-  transition: var();
+  transition: var(--time-function);
 }
 
 .footer-email {
@@ -54,6 +54,7 @@
   line-height: 1.28;
   letter-spacing: -0.02em;
   color: #ffffff;
+  transition: var(--time-function);
 }
 .footer-phone-number:hover,
 .footer-phone-number:focus{
