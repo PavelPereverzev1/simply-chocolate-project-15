@@ -148,7 +148,6 @@
   color: var(--clr-text-secondary);
   transition: border 250ms var(--time-function),
     color 250ms var(--time-function);
-  scroll-behavior: smooth;
 }
 
 .hero_btn-made:hover,
@@ -212,5 +211,4 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  scroll-behavior: smooth;
 }
