@@ -4,6 +4,28 @@
   }
 }
 
+.header_container {
+  display: flex;
+  align-items: center;
+}
+
+.header_nav {
+  display: none;
+}
+
+.header_main {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .header_nav {
+    display: block;
+  }
+}
+
+/* Header-logo */
+
 .header_logo {
   display: flex;
   align-items: center;
@@ -44,25 +66,7 @@
   }
 }
 
-.header_container {
-  display: flex;
-  align-items: center;
-}
-
-.header_nav {
-  display: none;
-}
-
-.header_main {
-  display: flex;
-  align-items: center;
-}
-
-@media screen and (min-width: 1200px) {
-  .header_nav {
-    display: block;
-  }
-}
+/* Header-list */
 
 .header_list {
   display: flex;
@@ -92,6 +96,31 @@
     padding-bottom: 28px;
   }
 }
+
+.header_socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  stroke: var(--clr-text-secondary);
+  transition: stroke 250ms var(--time-function);
+}
+
+.header_socials:focus,
+.header_socials:hover,
+.header_socials:active {
+  stroke: var(--clr-text-modified);
+}
+
+@media screen and (min-width: 1200px) {
+  .header_socials {
+    stroke: var(--clr-text-primary);
+    fill: none;
+  }
+}
+
+/* Header-buttons */
 
 .header_humburger-button {
   background-color: transparent;
@@ -175,30 +204,7 @@
   width: 22px;
 }
 
-.header_socials {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  width: 100%;
-  stroke: var(--clr-text-secondary);
-  transition: stroke 250ms var(--time-function);
-}
-
-.header_socials:focus,
-.header_socials:hover,
-.header_socials:active {
-  stroke: var(--clr-text-modified);
-}
-
-@media screen and (min-width: 1200px) {
-  .header_socials {
-    stroke: var(--clr-text-primary);
-    fill: none;
-  }
-}
-
-/* header_menu-button */
+/* Header-modal */
 
 .header_modal {
   display: none;
