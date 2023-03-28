@@ -1,0 +1,188 @@
+/* _________________HOW-MADE SECTIOM _________________ */
+
+.made-container {
+    padding: 72px 0 72px 0;
+}
+
+.made-header {
+    margin-bottom: 32px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.16;
+    text-align: center;
+}
+
+.made-header-two {
+    color: var(--clr-back-ground-modified);
+}
+
+.made-content {
+    display: flex;
+}
+
+.made-img-player {
+    position: relative;
+}
+
+.made-img {
+    border-radius: 15px;
+}
+
+.made-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.made-img-player {
+    position: relative;
+}
+
+.made-img-player.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.mobile {
+    width: 335px;
+    height: 500px;
+}
+
+.btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.iframe {
+    width: 335px;
+    height: 500px;
+    display: none;
+    border-radius: 15px;
+}
+
+.made-right-side {
+    background-color: var(--clr-text-secondary);
+    padding: 20px 14px;
+    border-radius: 15px;
+}
+
+
+.made-header-title {
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 1.33;
+    font-weight: 600;
+}
+
+.made-text {
+    position: relative;
+    padding-left: 16px;
+    line-height: 1.28;
+    letter-spacing: -0.02em;
+
+}
+
+.made-list .made-item:not(:last-child) {
+    margin-bottom: 18px;
+}
+
+.made-list .made-text::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 4px;
+    width: 8px;
+    height: 8px;
+    border: 1px solid #ECEDED;
+    border-radius: 50%;
+    background-color: #4C4C4C;
+}
+
+
+@media screen and (min-width: 375px) {
+
+    .tablet,
+    .desktop {
+        display: none;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .made-right-side {
+        max-width: 614px;
+        margin: 0 auto;
+        padding: 32px;
+    }
+
+    .iframe {
+        width: 614px;
+        height: 400px;
+        margin: 0 auto;
+    }
+
+    .tablet {
+        display: block;
+        width: 614px;
+        height: 400px;
+        margin: 0 auto;
+    }
+
+    .mobile,
+    .desktop {
+        display: none;
+    }
+
+    .made-header-title {
+        margin-bottom: 28px;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    .made-header {
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .made-content {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .desktop {
+        display: block;
+        max-width: 600px;
+        width: 600px;
+        height: 400px;
+    }
+
+    .mobile,
+    .tablet {
+        display: none;
+    }
+
+    .iframe {
+        width: 600px;
+        height: 400px;
+    }
+
+    .made-list .made-item:not(:last-child) {
+        margin-bottom: 24px;
+    }
+}

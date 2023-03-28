@@ -1,0 +1,279 @@
+<section class="sellers section">
+  <div class="container container-mobile">
+    <h2 class="sellers__title container-mobile__title">
+      <span class="sellers__title_accent">Top</span> sellers
+    </h2>
+    <img
+      class="sellers__img container-mobile__img"
+      srcset="
+        ../img/top-sellers/mobile1-335.jpg 335w,
+        ../img/top-sellers/mobile1-670.jpg 670w
+      "
+      src="../img/top-sellers/mobile1-335.jpg"
+      alt=""
+    />
+    <p class="container-mobile__description">
+      Crazy enough chocolate originates from a bean just like the coffee bean
+      called Cacao. Cacao has been around for thousands of years and was first
+      discovered by the Native American tribe called the Mayans.
+    </p>
+    <img
+      class="sellers__img container-mobile__img"
+      srcset="
+        ../img/top-sellers/mobile2-335.jpg 335w,
+        ../img/top-sellers/mobile2-670.jpg 670w
+      "
+      src="../img/top-sellers/mobile2-335.jpg"
+      alt=""
+    />
+
+    <button class="sellers__button" type="button">Buy now</button>
+  </div>
+
+  <!-- ===========================
+    another view desktop/tablet 
+    first varient will be hidden
+    ================================ -->
+
+  <div class="container container-desktop-tablet">
+    <h2 class="sellers__title">
+      <span class="sellers__title_accent">Top</span> sellers
+    </h2>
+    <ul class="sellers__img-list img-list">
+      <li class="img-list__list-item">
+        <img
+          class="sellers__img"
+          srcset="
+            ../img/top-sellers/tablet1-344.jpg  344w,
+            ../img/top-sellers/tablet1-688.jpg  688w,
+            ../img/top-sellers/desktop1-368.jpg 368w,
+            ../img/top-sellers/desktop1-736.jpg 736w
+          "
+          sizes="(min width: 1200px) 368px, (min width: 768px) 344px"
+          src="../img/top-sellers/mobile1-335.jpg"
+          alt=""
+        />
+      </li>
+      <li class="img-list__list-item">
+        <img
+          class="sellers__img"
+          srcset="
+            ../img/top-sellers/tablet2-344.jpg  344w,
+            ../img/top-sellers/tablet2-688.jpg  688w,
+            ../img/top-sellers/desktop2-368.jpg 368w,
+            ../img/top-sellers/desktop2-736.jpg 736w
+          "
+          sizes="(min width: 1200px) 368px, (min width: 768px) 344px"
+          src="../img/top-sellers/mobile2-335.jpg"
+          alt=""
+        />
+      </li>
+      <li class="img-list__list-item img-list__list-item_tablet-hidden">
+        <img
+          class="sellers__img"
+          srcset="
+            ../img/top-sellers/tablet3-344.jpg  344w,
+            ../img/top-sellers/tablet3-688.jpg  688w,
+            ../img/top-sellers/desktop3-368.jpg 368w,
+            ../img/top-sellers/desktop3-736.jpg 736w
+          "
+          sizes="(min width: 1200px) 368px, (min width: 768px) 344px"
+          src="../img/top-sellers/mobile3-335.jpg"
+          alt=""
+        />
+      </li>
+    </ul>
+    <div class="sellers__flex-container">
+      <p class="container-desktop-tablet__description">
+        Crazy enough chocolate originates from a bean just like the coffee bean
+        called Cacao. Cacao has been around for thousands of years and was first
+        discovered by the Native American tribe called the Mayans.
+      </p>
+      <button
+        class="sellers__button js-open-modal"
+        data-modal="1"
+        type="button"
+      >
+        Buy now
+      </button>
+    </div>
+  </div>
+  <!-- ==================
+      markup modals
+   ================== -->
+
+  <div class="overlay js-overlay-modal sellers-backdrop">
+    <div class="modal sellers-modal" data-modal="1">
+      <button type="button" class="js-modal-close sellers-close-button">
+        <svg class="sellers-modal-svg" width="24" height="24">
+          <use
+            href="./img/symbol-defs.svg#icon-x-close"
+            width="24"
+            height="24"
+          ></use>
+        </svg>
+      </button>
+
+      <h2 class="sellers__modal-title">
+        buy <span class="sellers__modal-title2">now</span>
+      </h2>
+
+      <!-- products mobile version
+        scrolling products will be hidden on tablet/desktop -->
+      <div class="swiper sellers__slide">
+        <ul class="swiper-wrapper sellers__modal-list">
+          <li class="swiper-slide sellers__modal-item">
+            <div class="sellers__modal-slide">
+              <img
+                srcset="
+                  ./img/top-sellers/mobile1-167.png 167w,
+                  ./img/top-sellers/mobile1-334.png 334w
+                "
+                src="./img/top-sellers/mobile1-167.png"
+                alt="chocolate"
+                sizes="167px"
+                class="sellers__modal-img"
+              />
+              <span class="sellers__modal-prise">100 g</span>
+            </div>
+          </li>
+          <li class="swiper-slide sellers__modal-item">
+            <div class="sellers__modal-slide">
+              <img
+                srcset="
+                  ./img/top-sellers/mobile2-167.png 167w,
+                  ./img/top-sellers/mobile2-334.png 334w
+                "
+                src="./img/top-sellers/mobile2-167.png"
+                alt="chocolate"
+                sizes="167px"
+                class="sellers__modal-img"
+              />
+              <span class="sellers__modal-prise">200 g</span>
+            </div>
+          </li>
+          <li class="swiper-slide sellers__modal-item">
+            <div class="sellers__modal-slide">
+              <img
+                srcset="
+                  ./img/top-sellers/mobile3-167.png 167w,
+                  ./img/top-sellers/mobile3-334.png 334w
+                "
+                src="./img/top-sellers/mobile3-167.png"
+                alt="chocolate"
+                sizes="167px"
+                class="sellers__modal-img"
+              />
+              <span class="sellers__modal-prise">300 g</span>
+            </div>
+          </li>
+        </ul>
+        <div class="swiper-pagination"></div>
+      </div>
+      <!-- form -->
+      <form class="modal-form">
+        <label class="sellers-modal-form-field">
+          <span class="sellers-modal-form-input-descr"
+            >Personal information</span
+          >
+          <span class="sellerrs-modal-form-input-wrapper">
+            <input
+              type="text"
+              name="Name"
+              class="sellers-modal-form_input"
+              required
+              pattern="[a-zA-Zа-яА-Я]+"
+              minlength="2"
+              placeholder="Name"
+            />
+          </span>
+          <span class="sellerrs-modal-form-input-wrapper">
+            <input
+              type="text"
+              name="Surname"
+              class="sellers-modal-form_input"
+              required
+              pattern="[a-zA-Zа-яА-Я]+"
+              minlength="2"
+              placeholder="Surname"
+            />
+          </span>
+        </label>
+        <label class="sellers-modal-form-field">
+          <span class="sellers-modal-form-input-descr">Email</span>
+          <span class="sellerrs-modal-form-input-wrapper">
+            <input
+              type="email"
+              name="user_email"
+              class="sellers-modal-form_input"
+              required
+              placeholder="Enter your email"
+            />
+          </span>
+        </label>
+        <label class="sellers-modal-form-field">
+          <span class="sellers-modal-form-input-descr">Phone number</span>
+          <span class="sellers-input-prefix-wraper">
+            <svg class="sellers-modal_country-icon">
+              <use href="./img/symbol-defs.svg#icon-ukraine"></use>
+            </svg>
+            <span class="sellers-phone-prefix">+380</span>
+          </span>
+          <span class="sellerrs-modal-form-input-wrapper">
+            <input
+              class="sellers-modal-form_input sellers-modal-form_input__iconed"
+              name="user_phone"
+              type="tel"
+              placeholder="Phone number"
+              required
+              pattern="^[0-9]{3}-[0-9]{2}-[0-9]{2}$"
+              title="xxx-xx-xx"
+              minlength="7"
+            />
+          </span>
+        </label>
+
+        <label class="sellers-modal-form-field">
+          <span class="sellers-modal-form-input-descr">Card number</span>
+          <span class="sellerrs-modal-form-input-wrapper">
+            <input
+              type="tel"
+              name="credit-number"
+              class="sellers-modal-form_input"
+              required
+              placeholder="Enter card"
+              pattern="[0-9\s]{13,19}"
+              maxlength="19"
+              inputmode="numeric"
+            />
+            <span class="sellers-input-prefix-wraper-card">
+              <svg class="sellers-modal_card-icon">
+                <use href="./img/symbol-defs.svg#icon-mastercard"></use>
+              </svg>
+            </span>
+          </span>
+        </label>
+
+        <label class="sellers-modal-form-field textarea-field">
+          <span class="sellers-modal-form-input-descr">Comment</span>
+          <textarea
+            name="user_message"
+            class="sellers-modal-form_message"
+            placeholder="Enter text"
+          ></textarea>
+        </label>
+
+        <button type="submit" class="sellers-modal-form_submit-btn">
+          Submit
+        </button>
+      </form>
+    </div>
+  </div>
+  <div class="pop-up">
+    <p>thank you!</p>
+    <p>
+      We are glad that you ordered our chocolate and we are giving you a 20%
+      discount on all our products.
+    </p>
+  </div>
+</section>
