@@ -362,8 +362,8 @@
 
 /* pop-up */
 .sellers-pop-up {
-  /* opacity: 0;
-  visibility: hidden; */
+  opacity: 0;
+  visibility: hidden;
 
   width: 100%;
   max-width: 310px;
@@ -375,7 +375,7 @@
   transform: translate(-50%, -50%);
   z-index: 30;
 
-  /* overflow: hidden; */
+  overflow: hidden;
   border-radius: 15px;
   background-color: var(--clr-back-ground-modified);
   padding: 84px 24px 170px 68px;
