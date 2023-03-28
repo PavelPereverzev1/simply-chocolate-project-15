@@ -43,6 +43,7 @@
   letter-spacing: -0.02em;
   color: #ffffff;
   margin-bottom: 4px;
+  transition: var();
 }
 
 .footer-email {
@@ -54,8 +55,19 @@
   letter-spacing: -0.02em;
   color: #ffffff;
 }
+.footer-phone-number:hover,
+.footer-phone-number:focus{
+  color: var(--clr-back-ground-modified);
+
+}
+.footer-email:hover,
+.footer-email:focus {
+  color: var(--clr-back-ground-modified);
+
+}
 .footer-social-list-icon {
   stroke: #ffffff;
+  fill: #1e1823;
   transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-social-list-icon:hover,
