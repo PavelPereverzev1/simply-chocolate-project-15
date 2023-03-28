@@ -208,7 +208,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }); // end click
   }); // end foreach
 
-
   closeButtons.forEach(function (item) {
     item.addEventListener('click', function (e) {
       var parentModal = this.closest('.modal');
@@ -219,7 +218,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }); // end foreach
 
-  
   document.body.addEventListener(
     'keyup',
     function (e) {
@@ -241,3 +239,23 @@ document.addEventListener('DOMContentLoaded', function () {
 }); // end ready
 
 // конец скрипта модалки
+
+//HOW-MADE SECTIOM
+(() => {
+  const refs = {
+    openModalBtn: document.querySelector('[data-modal-open]'),
+    modal2: document.querySelector('[data-modal]'),
+    iframe: document.querySelector('.iframe'),
+  };
+
+  refs.openModalBtn.addEventListener('click', toggleModal);
+
+  function toggleModal() {
+    refs.modal2.classList.toggle('visually-hidden');
+    refs.iframe.setAttribute(
+      'src',
+      'https://www.youtube-nocookie.com/embed/JgzkfO8nYKo?autoplay=1&autohide=1'
+    );
+    refs.iframe.style.display = 'block';
+  }
+})();
