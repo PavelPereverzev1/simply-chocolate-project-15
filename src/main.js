@@ -237,10 +237,6 @@ document.addEventListener('DOMContentLoaded', function () {
   //   this.addEventListener('submit', popup(this));
   // })
   
-  
-
-
-
   document.body.addEventListener(
     'keyup',
     function (e) {
