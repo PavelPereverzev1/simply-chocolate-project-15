@@ -15,11 +15,11 @@
     />
     
     <script type="module" crossorigin src="/simply-chocolate-project-15/assets/index-4cf4b6c1.js"></script>
-    <link rel="stylesheet" href="/simply-chocolate-project-15/assets/index-aa85f70e.css">
+    <link rel="stylesheet" href="/simply-chocolate-project-15/assets/index-c45b486c.css">
   </head>
   <body>
     <!-- Ростислав -->
-    <header class="header">
+    <header class="header" id="header">
   <div class="header_container container">
     <a href="" class="header_logo">
       SIMPLY <span class="header_logo_secondary">CHOCOLATE</span>
@@ -31,33 +31,41 @@
     <nav class="header_nav">
       <div class="header_main">
         <ul class="header_list">
-          <li class="header_item"><a href="" class="header_link">Home</a></li>
           <li class="header_item">
-            <a href="" class="header_link">How it’s made?</a>
+            <a href="#header" class="header_link">Home</a>
           </li>
           <li class="header_item">
-            <a href="" class="header_link">Our products</a>
+            <a href="#how_made" class="header_link">How it’s made?</a>
           </li>
           <li class="header_item">
-            <a href="" class="header_link">Top sellers</a>
+            <a href="#our_products" class="header_link">Our products</a>
           </li>
           <li class="header_item">
-            <a href="" class="header_link">Chocolate is loved</a>
+            <a href="#top_sellers" class="header_link">Top sellers</a>
+          </li>
+          <li class="header_item">
+            <a href="#reviwes" class="header_link">Chocolate is loved</a>
           </li>
         </ul>
+      </div>
+    </nav>
 
+    <ul class="header_button_list">
+      <li class="header_button_item">
         <a href="" class="header_socials">
-          <svg height="24" width="24">
+          <svg height="24" width="24" class="header_social-icon">
             <use href="../img/symbol-defs.svg#icon-instagram"></use>
           </svg>
         </a>
+      </li>
+      <li class="header_button_item">
         <a href="" class="header_socials">
-          <svg height="24" width="24">
+          <svg height="24" width="24" class="header_social-icon">
             <use href="../img/symbol-defs.svg#icon-twitter"></use>
           </svg>
         </a>
-      </div>
-    </nav>
+      </li>
+    </ul>
 
     <button type="button" class="header_humburger-button js-open-menu">
       <svg height="28" width="28">
@@ -403,7 +411,7 @@
 
       <!-- Андрій -->
       <!-- How it's made? -->
-<section>
+<section id="how_made">
   <div class="container made-container">
     <h2 class="made-header">
       HOW IT’S <span class="made-header-two">MADE?</span>
@@ -489,7 +497,7 @@
 
 
       <!-- Назар Кріль -->
-      <section class="product">
+      <section class="product" id="our_products">
   <div class="product__body container">
     <h2 class="product__title">
       Our <span class="product__title_second">Product</span>
@@ -633,7 +641,7 @@
 
 
       <!-- Дмитро -->
-      <section class="sellers section">
+      <section class="sellers section" id="top_sellers">
   <div class="container container-mobile">
     <h2 class="sellers__title container-mobile__title">
       <span class="sellers__title_accent">Top</span> sellers
@@ -906,7 +914,7 @@
 
 
       <!-- Павел Переверзев -->
-      <section class="reviews">
+      <section class="reviews" id="reviwes">
   <div class="container">
     <h2 class="reviews_title">
       <span class="reviews_title__colored-part">chocolate</span> is loved
@@ -1084,16 +1092,28 @@
           name="user_comment"
           placeholder="Text input"
         ></textarea>
-        <button type="submit" class="modal-form_submit-btn js-open-modal js-modal-close" data-modal="22" >Send</button>
+        <button
+          type="submit"
+          class="modal-form_submit-btn js-open-modal js-modal-close"
+          data-modal="22"
+        >
+          Send
+        </button>
       </form>
     </div>
     <div class="modal reviews-thanks-modal" data-modal="22">
-      <button class="js-modal-close reviews-thanks-modal_close-btn" type="button">
+      <button
+        class="js-modal-close reviews-thanks-modal_close-btn"
+        type="button"
+      >
         <svg class="reviews-thanks-modal_close-icon">
           <use href="/simply-chocolate-project-15/assets/symbol-defs-39dc2d95.svg#icon-x-close"></use>
         </svg>
       </button>
-      <h2 class="reviews-thanks-modal_title">thank you <br> for your feedback!</h2>
+      <h2 class="reviews-thanks-modal_title">
+        thank you <br />
+        for your feedback!
+      </h2>
       <p class="reviews-thanks-modal_text">We are so happy to hear from you!</p>
     </div>
     <div class="overlay js-overlay-modal reviews-backdrop"></div>
