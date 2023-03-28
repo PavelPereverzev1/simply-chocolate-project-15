@@ -207,7 +207,6 @@
 /* Header-modal */
 
 .header_modal {
-  display: none;
   position: fixed;
   padding: 136px 46px 0 50px;
   top: 0;
@@ -218,6 +217,15 @@
   z-index: 1000;
 
   background-color: #1e1823;
+
+  transform: translateX(100%);
+  transition: transform 250ms var(--time-function);
+}
+
+.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -229,6 +237,6 @@
 
 @media screen and (max-width: 1199px) {
   .header_modal.is-open {
-    display: block;
+    transform: translateX(0);
   }
 }
