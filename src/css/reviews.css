@@ -2,19 +2,18 @@
 .rewiews-modal_title,
 .reviews-thanks-modal_title {
   margin-bottom: 22px;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
+  font-weight: var(--font-weight-semi-bold);
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: -0.03em;
   text-align: center;
   text-transform: uppercase;
-  color: #111111;
+  color: var(--clr-text-primary);
 }
 
 .reviews_title__colored-part,
 .rewiews-modal_title__colored-part {
-  color: #fd9222;
+  color: var(--clr-text-modified);
 }
 
 .reviews .container {
@@ -42,17 +41,13 @@
 
 .rewiews-card_title {
   margin-bottom: 24px;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
+  font-weight: var(--font-weight-semi-bold);
   font-size: 18px;
   line-height: 1.33px;
   color: #111111;
 }
 
 .rewiews-card_text {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-  font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
   color: rgba(17, 17, 17, 0.7);
@@ -64,6 +59,8 @@
 }
 
 .rewiews-card_img-thumb {
+  border-radius: 50%;
+  overflow: hidden;
   position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -86,7 +83,7 @@
   width: 28px;
   height: 13px;
   border-radius: 32px;
-  background: #fd9222;
+  background: var(--clr-text-modified);
 }
 
 .reviews_open-btn {
@@ -94,25 +91,23 @@
   min-width: 165px;
   height: 41px;
 
-  font-family: 'Montserrat';
   font-weight: 600;
-  font-size: 14px;
   line-height: 1.21;
   text-align: center;
 
-  color: #111111;
-  background-color: #ffffff;
-  border: 1px solid #fd9222;
+  color: var(--clr-text-primary);
+  background-color: var(--clr-back-ground-primary);
+  border: 1px solid var(--clr-text-modified);
   border-radius: 100px;
   cursor: pointer;
 
-  transition: color, background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color, background-color 250ms var(--time-function);
 }
 
 .reviews_open-btn:hover,
 .reviews_open-btn:focus {
-  color: #ffffff;
-  background-color: #fd9222;
+  color: var(--clr-text-secondary);
+  background-color: var(--clr-back-ground-modified);
 }
 
 /* Стили для модальных окон */
@@ -128,7 +123,7 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 20;
-  transition: 0.3s all;
+  transition: all 250ms var(--time-function);
 }
 
 .reviews-modal {
@@ -153,8 +148,8 @@
   text-align: center;
   padding:32px 24px;
   border-radius: 15px;
-  background-color: #FAFAFA;
-  transition: 0.3s all;
+  background-color: #fafafa;
+  transition: all 250ms var(--time-function);
 }
 
 /* Стили для активных классов подложки и окна */
@@ -177,13 +172,13 @@
   width: 24px;
   height: 24px;
   position: absolute;
-  top: 15px;
-  right: 15px;
+  top: 14px;
+  right: 14px;
   cursor: pointer;
 }
 
 .reviews-modal_close-icon {
-  stroke: #111111;
+  stroke: var(--clr-text-primary);
   width: 24px;
   height: 24px;
 }
@@ -199,9 +194,12 @@
   width: 100%;
   margin-bottom: 14px;
   padding: 14px 18px;
+  line-height: 1.21;
+  letter-spacing: -0.02em;
+
   border: 1.5px solid rgba(17, 17, 17, 0.05);
   border-radius: 8px;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms var(--time-function);
 }
 
 .modal-form_input {
@@ -220,29 +218,25 @@
 
 .modal-form_input:focus,
 .modal-form_message:focus {
-  border-color: #fd9222;
+  border-color: var(--clr-text-modified);
   outline: none;
 }
 
 .modal-form_input::placeholder,
 .modal-form_message::placeholder {
-  font-family: 'Montserrat';
-  font-weight: 400;
-  font-size: 14px;
   line-height: 1.21;
   letter-spacing: -0.02em;
   color: rgba(64, 64, 64, 0.3);
 }
 
 .reviews-modal_country-icon {
+  display: block;
   width: 24px;
   height: 18px;
 }
 
 .phone-prefix {
-  font-family: 'Montserrat';
-  font-weight: 500;
-  font-size: 14px;
+  font-weight: var(--font-weight-medium);
   line-height: 1.21;
   letter-spacing: -0.02em;
   color: #000;
@@ -254,7 +248,7 @@
 
 .input-prefix-wraper {
   position: absolute;
-  top: 40%;
+  top: 37%;
   transform: translateY(-50%);
   left: 18px;
   display: flex;
@@ -267,25 +261,22 @@
 
 .modal-form_submit-btn {
   padding: 12px 28px;
-  background-color: #fd9222;
+  background-color: var(--clr-back-ground-modified);
   height: 41px;
   min-width: 93px;
   border-radius: 100px;
   border: none;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
+  font-weight: var(--font-weight-semi-bold);
   line-height: 1.21;
-  color: #ffffff;
+  color: var(--clr-text-secondary);
   display: block;
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 250ms var(--time-function);
 }
 
 .modal-form_submit-btn:hover,
 .modal-form_submit-btn:focus {
-  color: #fd9222;
-  background-color: #fcf1e0;
+  color: var(--clr-text-modified);
+  background-color: var(--clr-text-modal-modified);
 }
 
 .reviews-thanks-modal {
@@ -306,15 +297,15 @@
   /*  Побочные стили   */
   overflow: hidden;
   border-radius: 15px;
-  background-color: #fd9222;
+  background-color: var(--clr-back-ground-modified);
   padding: 84px 24px 84px 58px;
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 250ms var(--time-function);
 }
 
 .reviews-thanks-modal_close-btn {
   width: 28px;
   height: 28px;
-  background-color: #fcf1e0;
+  background-color: var(--clr-text-modal-modified);
   border-radius: 50%;
 }
 
@@ -327,7 +318,7 @@
 .reviews-thanks-modal_title {
   margin-bottom: 8px;
   text-align: left;
-  color: #fcf1e0;
+  color: var(--clr-text-modal-modified);
 }
 
 .reviews-thanks-modal_text {
@@ -336,13 +327,13 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: -0.02em;
-  color: #fff;
+  color: var(--clr-text-secondary);
 }
 
 .reviews-thanks-modal::after {
   position: absolute;
   left: 0;
-  bottom: -4px;
+  bottom: -7px;
   content: url(/img/reviews/chocolate-bar-mobile.webp);
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
@@ -433,7 +424,7 @@
     height: 40px;
     top: 24px;
     right: 24px;
-    background-color: #fcf1e0;
+    background-color: var(--clr-text-modal-modified);
     border-radius: 50%;
   }
 
@@ -448,7 +439,7 @@
     font-size: 24px;
     line-height: 1.17;
     text-align: left;
-    color: #fcf1e0;
+    color: var(--clr-text-modal-modified);
   }
   .reviews-thanks-modal_text {
     max-width: 100%;
@@ -459,7 +450,7 @@
   .reviews-thanks-modal::after {
     position: absolute;
     left: 0;
-    bottom: -4px;
+    bottom: -7px;
     content: url(/img/reviews/chocolate-bar-desktop.webp);
   }
 
