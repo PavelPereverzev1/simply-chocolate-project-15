@@ -1,87 +1,84 @@
 <!-- How it's made? -->
-<section class="how-made">
-  <div class="container">
-    <h2 class="made-title">
-      HOW IT’S <span class="made-text-logo">MADE?</span>
+<section>
+  <div class="container made-container">
+    <h2 class="made-header">
+      HOW IT’S <span class="made-header-two">MADE?</span>
     </h2>
-    <div class="made-container"></div>
-    <div class="made-video">
-      <picture>
-        <source
-          media="(min-width:375px)"
-          srcset="
-            ../img/how-made/made-mobile.jpg    1x,
-            ../img/how-made/made-mobile@2x.jpg 2x
-          "
-          type="image/jpg"
-        />
-        <source
-          media="(min-width 768px)"
-          srcset="
-            ../img/how-made/made-tablet.jpg    1x,
-            ../img/how-made/made-tablet@2x.jpg 2x
-          "
-          type="image/jpg"
-        />
-        <source
-          media="(min-width:1200px)"
-          srcset="
-            ../img/how-made/made-desktop.jpg    1x,
-            ../img/how-made/made-desktop@2x.jpg 2x
-          "
-          type="image/jpg"
-        />
-        <img
-          src="../img/how-made/made-desktop.jpg"
-          alt="kneading chocolate with a whisk"
-        />
-      </picture>
-      <button>Play</button>
-      <iframe
-        width="600"
-        height="400"
-        src="https://www.youtube-nocookie.com/embed/JgzkfO8nYKo"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
-      ></iframe>
-    </div>
-
     <div class="made-content">
-      <h3 class="made-header-title">
-        Try our chocolates today and discover the perfect balance of flavor
-      </h3>
-      <ul class="made-list">
-        <li class="made-item">
-          <p class="made-text">
-            Heat the milk in a saucepan without bringing it to a boil. Add sugar
-            and cocoa powder.
-          </p>
-        </li>
-        <li class="made-item">
-          <p class="made-text">
-            At the same time, prepare a water bath. Melt the butter on it.
-          </p>
-        </li>
-        <li>
-          <p class="made-text">
-            "Mix" the milk mixture and already liquid butter. Mix thoroughly
-            with a silicone spatula so that the mass becomes uniform and silky.
-          </p>
-        </li>
-        <li class="made-itemt">
-          <p class="made-text">
-            Heat the mixture over low heat, letting it barely boil.
-          </p>
-        </li>
-        <li class="made-item">
-          <p class="made-text">
-            Pour the chocolate into special containers (can be replaced with ice
-            molds). Allow to cool and harden.
-          </p>
-        </li>
-      </ul>
+      <div class="made-left-side">
+        <div class="made-img-player">
+          <img
+            class="made-img mobile"
+            srcset="../img/how-made/made-mobile@2x.jpg"
+            src="../img/how-made/made-mobile.jpg"
+            alt="kneading chocolate with a whisk"
+          />
+          <img
+            class="made-img tablet"
+            srcset="../img/how-made/made-tablet@2x.jpg"
+            src="../img/how-made/made-tablet.jpg"
+            alt="kneading chocolate with a whisk"
+          />
+          <img
+            class="made-img desktop"
+            srcset="../img/how-made/made-desktop@2x.jpg"
+            src="../img/how-made/made-desktop.jpg"
+            alt="kneading chocolate with a whisk"
+          />
+          <button class="btn">
+            <svg width="44" height="44" class="modal-icon">
+              <use
+                class="made-svg"
+                href="../img/symbol-defs.svg#icon-play"
+              ></use>
+            </svg>
+          </button>
+        </div>
+        <iframe
+          class="iframe"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+
+      <div class="made-right-side">
+        <h3 class="made-header-title">
+          Try our chocolates today and discover the perfect balance of flavor
+        </h3>
+        <ul class="made-list">
+          <li class="made-item">
+            <p class="made-text">
+              Heat the milk in a saucepan without bringing it to a boil. Add
+              sugar and cocoa powder.
+            </p>
+          </li>
+          <li class="made-item">
+            <p class="made-text">
+              At the same time, prepare a water bath. Melt the butter on it.
+            </p>
+          </li>
+          <li class="made-item">
+            <p class="made-text">
+              "Mix" the milk mixture and already liquid butter. Mix thoroughly
+              with a silicone spatula so that the mass becomes uniform and
+              silky.
+            </p>
+          </li>
+          <li class="made-item">
+            <p class="made-text">
+              Heat the mixture over low heat, letting it barely boil.
+            </p>
+          </li>
+          <li class="made-item">
+            <p class="made-text">
+              Pour the chocolate into special containers (can be replaced with
+              ice molds). Allow to cool and harden.
+            </p>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </section>
