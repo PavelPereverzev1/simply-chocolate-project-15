@@ -177,8 +177,8 @@
 }
 /* form */
 .sellers-backdrop {
-  opacity: 0;
-  visibility: hidden;
+  /* opacity: 0;
+  visibility: hidden; */
   position: fixed;
   top: 0;
   left: 0;
@@ -189,8 +189,8 @@
   transition: 0.3s all;
 }
 .sellers-modal {
-  opacity: 0;
-  visibility: hidden;
+  /* opacity: 0;
+  visibility: hidden; */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -218,7 +218,8 @@
   width: 24px;
   height: 24px;
 }
-.sellers-close-button {
+.sellers-close-button,
+.sellers-thanks-modal_close-btn {
   position: absolute;
   right: 14px;
   top: 14px;
@@ -357,4 +358,68 @@
 .sellers-modal-form_submit-btn:focus {
   color: #fd9222;
   background-color: #fcf1e0;
+}
+
+/* pop-up */
+.sellers-pop-up {
+  opacity: 0;
+  visibility: hidden;
+
+  width: 100%;
+  max-width: 310px;
+  height: 350px;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 30;
+
+  overflow: hidden;
+  border-radius: 15px;
+  background-color: var(--clr-back-ground-modified);
+  padding: 84px 24px 170px 68px;
+  transition: all 250ms var(--time-function);
+}
+
+.sellers-thanks-modal_close-btn {
+  width: 28px;
+  height: 28px;
+  background-color: #fcf1e0;
+  border-radius: 50%;
+  padding: 6px;
+}
+
+.sellers-thanks-modal_close-icon {
+  width: 16px;
+  height: 16px;
+  stroke: #d44528;
+}
+
+.sellers-thanks-modal_title {
+  margin-bottom: 8px;
+  text-align: left;
+  color: var(--clr-text-modal-modified);
+}
+
+.sellers-thanks-modal_text {
+  text-align: left;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+  color: var(--clr-text-secondary);
+}
+
+.sellers-pop-up::after {
+  position: absolute;
+  left: 0;
+  bottom: -7px;
+  content: url(/img/reviews/chocolate-bar-mobile.webp);
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 1200px) and (min-resolution: 192dpi),
+  screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .sellers-pop-up::after {
+    content: url(/img/reviews/chocolate-bar-mobile@2x.webp);
+  }
 }
