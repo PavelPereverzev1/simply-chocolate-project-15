@@ -26,8 +26,41 @@
   align-items: center;
 }
 
-.header_main {
+.header_nav {
   display: none;
+}
+
+.header_main {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .header_nav {
+    display: block;
+    margin-left: auto;
+  }
+}
+
+.header_list {
+  display: flex;
+  gap: 24px;
+}
+
+.header_link {
+  padding: 36px 0;
+  font-weight: var(--font-weight-medium);
+  line-height: 1.14;
+
+  letter-spacing: -0.02em;
+
+  color: var(--clr-text-secondary);
+}
+
+@media screen and (min-width: 1200px) {
+  .header_link {
+    color: var(--clr-text-primary);
+  }
 }
 
 .header_humburger-button {
@@ -40,7 +73,16 @@
   margin-left: auto;
 }
 
+@media screen and (min-width: 1200px) {
+  .header_humburger-button {
+    display: none;
+  }
+}
+
 .header_button_close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
   background-color: transparent;
   border: none;
   padding: 0;
@@ -49,7 +91,19 @@
   stroke: #fff;
 }
 
+@media screen and (min-width: 768px) {
+  .header_button_close {
+    top: 24px;
+    right: 32px;
+    height: 32px;
+    width: 32px;
+  }
+}
+
 .header_icon_close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 100%;
   width: 100%;
 }
@@ -57,15 +111,35 @@
 /*  */
 
 .header_modal-button_list {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
   display: flex;
+  gap: 18px;
+}
+
+@media screen and (min-width: 768px) {
+  .header_modal-button_list {
+    left: 32px;
+    bottom: 24px;
+  }
 }
 
 .header_modal-button_item {
-  fill: #fff;
+  height: 22px;
+  width: 22px;
+}
+
+.header_socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  stroke: #fff;
 }
 
 .header_social-icon {
-  fill: #fff;
 }
 
 /* header_menu-button */
@@ -73,10 +147,13 @@
 .header_modal {
   display: none;
   position: fixed;
+  padding: 136px 46px 0 50px;
   top: 0;
   right: 0;
   height: 100%;
   width: 220px;
+
+  z-index: 1000;
 
   background-color: #1e1823;
 }
@@ -84,6 +161,7 @@
 @media screen and (min-width: 768px) {
   .header_modal {
     width: 290px;
+    padding: 156px 81px 0 85px;
   }
 }
 

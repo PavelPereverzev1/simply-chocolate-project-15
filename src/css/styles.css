@@ -80,6 +80,7 @@
   --font-weight-medium: 500;
   --font-weight-semi-bold: 600;
   --font-weight-bold: 700;
+  --time-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
