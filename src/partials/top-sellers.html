@@ -105,43 +105,40 @@
   <!-- ==================
       markup modals
    ================== -->
-    <div class="sellers-modal-wraper">
-      
-    </div>
-  <div class="modal sellers-modal" data-modal="1">
-    <button type="button" class="js-modal-close sellers-close-button">
-      <svg class="sellers-modal-svg" width="24" height="24">
-        <use
-          href="./img/symbol-defs.svg#icon-x-close"
-          width="24"
-          height="24"
-        ></use>
-      </svg>
-    </button>
-    <!-- sellers-backdrop.  sellers-modal-->
-    <h2 class="sellers__modal-title">
-      buy <span class="sellers__modal-title2">now</span>
-    </h2>
+  <div class="modal sellers-modal-wraper " data-modal="1">
+    <div class="sellers-modal" >
+      <button type="button" class="js-modal-close sellers-close-button">
+        <svg class="sellers-modal-svg" width="24" height="24">
+          <use
+            href="./img/symbol-defs.svg#icon-x-close"
+            width="24"
+            height="24"
+          ></use>
+        </svg>
+      </button>
+      <!-- sellers-backdrop.  sellers-modal-->
+      <h2 class="sellers__modal-title">
+        buy <span class="sellers__modal-title2">now</span>
+      </h2>
 
+      <!-- products mobile version
+            scrolling products will be hidden on tablet/desktop -->
 
-    <!-- products mobile version
-        scrolling products will be hidden on tablet/desktop -->
-
-    <div class="swiper sellers__slide">
-      <ul class="swiper-wrapper sellers__modal-list">
-        <li class="swiper-slide sellers__modal-item">
-          <div class="sellers__modal-slide">
-            <img
-              srcset="
-                ./img/top-sellers/tablet1-120.png 120w,
-                ./img/top-sellers/mobile1-167.png 167w,
-                ./img/top-sellers/tablet1-240.png 240w,
-                ./img/top-sellers/mobile1-334.png 334w
-              "
-              src="./img/top-sellers/mobile1-167.png"
-              alt="chocolate"
-              sizes="(min-width:768px) 120px, 167px"
-              class="sellers__modal-img sellers__modal-img_small"
+      <div class="swiper sellers__slide">
+        <ul class="swiper-wrapper sellers__modal-list">
+          <li class="swiper-slide sellers__modal-item">
+            <div class="sellers__modal-slide">
+              <img
+                srcset="
+                  ./img/top-sellers/tablet1-120.png 120w,
+                  ./img/top-sellers/mobile1-167.png 167w,
+                  ./img/top-sellers/tablet1-240.png 240w,
+                  ./img/top-sellers/mobile1-334.png 334w
+                "
+                src="./img/top-sellers/mobile1-167.png"
+                alt="chocolate"
+                sizes="(min-width:768px) 120px, 167px"
+                class="sellers__modal-img sellers__modal-img_small"
               />
               <span class="sellers__modal-prise">100 g</span>
             </div>
@@ -179,104 +176,106 @@
         </ul>
         <div class="swiper-pagination"></div>
       </div>
-    <!-- form -->
-    <form class="modal-form">
-      <div class="sellers-modal-form-field sellers-modal-form-field_flex">
-        <span class="sellers-modal-form-input-descr">Personal information</span>
-        <span
-          class="sellers-modal-form-input-wrapper sellers-modal-form-input-wrapper_siblings"
-        >
-          <input
-            type="text"
-            name="Name"
-            class="sellers-modal-form_input"
-            required
-            pattern="[a-zA-Zа-яА-Я]+"
-            minlength="2"
-            placeholder="Name"
-          />
-        </span>
-        <span
-          class="sellers-modal-form-input-wrapper sellers-modal-form-input-wrapper_siblings"
-        >
-          <input
-            type="text"
-            name="Surname"
-            class="sellers-modal-form_input"
-            required
-            pattern="[a-zA-Zа-яА-Я]+"
-            minlength="2"
-            placeholder="Surname"
-          />
-        </span>
-      </div>
-      <label class="sellers-modal-form-field">
-        <span class="sellers-modal-form-input-descr">Email</span>
-        <span class="sellers-modal-form-input-wrapper">
-          <input
-            type="email"
-            name="user_email"
-            class="sellers-modal-form_input"
-            required
-            placeholder="Enter your email"
-          />
-        </span>
-      </label>
-      <label class="sellers-modal-form-field">
-        <span class="sellers-modal-form-input-descr">Phone number</span>
-        <span class="sellers-input-prefix-wraper">
-          <svg class="sellers-modal_country-icon">
-            <use href="./img/symbol-defs.svg#icon-ukraine"></use>
-          </svg>
-          <span class="sellers-phone-prefix">+380</span>
-        </span>
-        <span class="sellers-modal-form-input-wrapper">
-          <input
-            class="sellers-modal-form_input sellers-modal-form_input__iconed"
-            name="user_phone"
-            type="tel"
-            placeholder="Phone number"
-            required
-            pattern="^[0-9]{3}-[0-9]{2}-[0-9]{2}$"
-            title="xxx-xx-xx"
-            minlength="7"
-          />
-        </span>
-      </label>
-      <label class="sellers-modal-form-field">
-        <span class="sellers-modal-form-input-descr">Card number</span>
-        <span class="sellers-modal-form-input-wrapper">
-          <input
-            type="tel"
-            name="credit-number"
-            class="sellers-modal-form_input"
-            required
-            placeholder="Enter card"
-            
-            maxlength="19"
-            inputmode="numeric"
-          />
-          <span class="sellers-input-prefix-wraper-card">
-            <svg class="sellers-modal_card-icon">
-              <use href="./img/symbol-defs.svg#icon-mastercard"></use>
-            </svg>
+      <!-- form -->
+      <form class="modal-form">
+        <div class="sellers-modal-form-field sellers-modal-form-field_flex">
+          <span class="sellers-modal-form-input-descr"
+            >Personal information</span
+          >
+          <span
+            class="sellers-modal-form-input-wrapper sellers-modal-form-input-wrapper_siblings"
+          >
+            <input
+              type="text"
+              name="Name"
+              class="sellers-modal-form_input"
+              required
+              pattern="[a-zA-Zа-яА-Я]+"
+              minlength="2"
+              placeholder="Name"
+            />
           </span>
-        </span>
-      </label>
+          <span
+            class="sellers-modal-form-input-wrapper sellers-modal-form-input-wrapper_siblings"
+          >
+            <input
+              type="text"
+              name="Surname"
+              class="sellers-modal-form_input"
+              required
+              pattern="[a-zA-Zа-яА-Я]+"
+              minlength="2"
+              placeholder="Surname"
+            />
+          </span>
+        </div>
+        <label class="sellers-modal-form-field">
+          <span class="sellers-modal-form-input-descr">Email</span>
+          <span class="sellers-modal-form-input-wrapper">
+            <input
+              type="email"
+              name="user_email"
+              class="sellers-modal-form_input"
+              required
+              placeholder="Enter your email"
+            />
+          </span>
+        </label>
+        <label class="sellers-modal-form-field">
+          <span class="sellers-modal-form-input-descr">Phone number</span>
+          <span class="sellers-input-prefix-wraper">
+            <svg class="sellers-modal_country-icon">
+              <use href="./img/symbol-defs.svg#icon-ukraine"></use>
+            </svg>
+            <span class="sellers-phone-prefix">+380</span>
+          </span>
+          <span class="sellers-modal-form-input-wrapper">
+            <input
+              class="sellers-modal-form_input sellers-modal-form_input__iconed"
+              name="user_phone"
+              type="tel"
+              placeholder="Phone number"
+              required
+              pattern="^[0-9]{3}-[0-9]{2}-[0-9]{2}$"
+              title="xxx-xx-xx"
+              minlength="7"
+            />
+          </span>
+        </label>
+        <label class="sellers-modal-form-field">
+          <span class="sellers-modal-form-input-descr">Card number</span>
+          <span class="sellers-modal-form-input-wrapper">
+            <input
+              type="tel"
+              name="credit-number"
+              class="sellers-modal-form_input"
+              required
+              placeholder="Enter card"
+              maxlength="19"
+              inputmode="numeric"
+            />
+            <span class="sellers-input-prefix-wraper-card">
+              <svg class="sellers-modal_card-icon">
+                <use href="./img/symbol-defs.svg#icon-mastercard"></use>
+              </svg>
+            </span>
+          </span>
+        </label>
 
-      <label class="sellers-modal-form-field textarea-field">
-        <span class="sellers-modal-form-input-descr">Comment</span>
-        <textarea
-          name="user_message"
-          class="sellers-modal-form_message"
-          placeholder="Enter text"
-        ></textarea>
-      </label>
+        <label class="sellers-modal-form-field textarea-field">
+          <span class="sellers-modal-form-input-descr">Comment</span>
+          <textarea
+            name="user_message"
+            class="sellers-modal-form_message"
+            placeholder="Enter text"
+          ></textarea>
+        </label>
 
-      <button type="submit" class="sellers-modal-form_submit-btn">
-        Submit
-      </button>
-    </form>
+        <button type="submit" class="sellers-modal-form_submit-btn">
+          Submit
+        </button>
+      </form>
+    </div>
   </div>
 
   <!-- pop-up -->

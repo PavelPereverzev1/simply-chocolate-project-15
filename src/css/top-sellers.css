@@ -209,37 +209,51 @@
   background: #fd9222;
 }
 /* form */
-
-.sellers-modal {
+.sellers-modal-wraper{
   opacity: 0;
-  visibility: hidden;
+  pointer-events: none;
+  /* visibility: hidden; */
   position: fixed;
-  overflow: auto;
+  overflow-y: auto;
+  scrollbar-width: none;
   top: 50%;
   left: 50%;
   translate: -50% -50%;
+  z-index: 29;
+  height: max-content;
+  width: 313px;
+  height: 100%;
+  transition: all 250ms var(--time-function);
+}
+.sellers-modal {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  position: relative;
   z-index: 30; /* Должен быть выше чем у подложки*/
   background-color: #fafafa;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 15px;
-  transition: 0.3s all;
-  position: fixed;
   width: 100%;
   max-width: 311px;
   padding: 32px 24px;
 }
 
 @media screen and (min-width: 768px) {
+  
+  .sellers-modal-wraper{
+    width: 611px;
+  }
   .sellers-modal {
     max-width: 609px;
     padding: 48px;
   }
 }
 
-.sellers-modal.active,
+.sellers-modal-wraper.active,
 .sellers-pop-up.active {
   opacity: 1;
+  pointer-events: all;
   visibility: visible;
 }
 .sellers-modal-svg {
