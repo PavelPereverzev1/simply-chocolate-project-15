@@ -22,8 +22,23 @@
 }
 
 .reviews {
+  padding-top: 72px;
   padding-bottom: 72px;
   text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .reviews {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .reviews {
+    padding-top: 128px;
+    padding-bottom: 128px;
+  }
 }
 
 .rewiews-card_content {
@@ -146,7 +161,7 @@
   /*  Побочные стили   */
   box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
   text-align: center;
-  padding:32px 24px;
+  padding: 32px 24px;
   border-radius: 15px;
   background-color: #fafafa;
   transition: all 250ms var(--time-function);
@@ -471,6 +486,4 @@
   .rewiews-card_content {
     max-width: 360px;
   }
-
-  
 }

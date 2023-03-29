@@ -91,14 +91,11 @@ const swiperSellers = new Swiper('.sellers__slide', {
   breakpoints: {
     //     // when window width is >= 320px
     768: {
-      slidesPerView: 2.5,
-      spaceBetween: 18,
+      slidesPerView: 3,
+      spaceBetween: 16,
     },
     //     // when window width is >= 480px
-    1200: {
-      slidesPerView: 4,
-      spaceBetween: 18,
-    },
+
     //     // when window width is >= 640px
     //     640: {
     //       slidesPerView: 4,
@@ -182,7 +179,7 @@ document.addEventListener('DOMContentLoaded', function () {
   var modalButtons = document.querySelectorAll('.js-open-modal'),
     overlay = document.querySelector('.js-overlay-modal'),
     closeButtons = document.querySelectorAll('.js-modal-close'),
-    submitButtons = document.querySelectorAll('[type="submit"]');
+    forms = document.querySelectorAll('form'); // выбираем формы документа
 
   /* Перебираем массив кнопок */
   modalButtons.forEach(function (item) {
@@ -207,6 +204,23 @@ document.addEventListener('DOMContentLoaded', function () {
       document.body.style.overflow = 'hidden';
     }); // end click
   }); // end foreach
+
+  forms.forEach(function (item) {
+    // перебираем формы
+    item.addEventListener('submit', function (e) {
+      // назначаем на каждую обработчик submit
+      e.preventDefault(); // прерываем submit
+      // останавливает цепочку вызова событий для следующих слушателей
+      e.stopImmediatePropagation();
+      var parentModal = this.closest('.modal');
+      parentModal.classList.remove('active');
+      item.reset();
+      var modalId = parentModal.getAttribute('data-modal'),
+        modalElem = document.querySelector(
+          '.modal[data-modal="' + modalId + modalId + '"]');
+        modalElem.classList.add('active');
+    });
+  });
 
   closeButtons.forEach(function (item) {
     item.addEventListener('click', function (e) {

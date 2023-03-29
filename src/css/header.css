@@ -36,8 +36,15 @@
   letter-spacing: -0.03em;
   color: var(--clr-text-primary);
 
-  padding-top: 31px;
-  padding-bottom: 31px;
+  padding-top: 25px;
+  padding-bottom: 19px;
+}
+
+@media screen and (min-width: 768px) {
+  .header_logo {
+    padding-top: 31px;
+    padding-bottom: 31px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -45,8 +52,8 @@
     margin-right: 188px;
     font-size: 18px;
     line-height: 1.11;
-    padding-top: 28px;
-    padding-bottom: 28px;
+    padding-top: 26px;
+    padding-bottom: 26px;
   }
 }
 
