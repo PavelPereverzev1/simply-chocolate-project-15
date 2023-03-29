@@ -140,10 +140,18 @@
   border-radius: 15px;
   width: 231px;
   text-align: center;
-  align-items: center;
   margin: 0px auto;
   padding: 32px 0px 32px 0px;
 }
+
+@media screen and (min-width: 768px) {
+  .sellers__modal-slide {
+    width: 160px;
+    padding-top: 24px;
+    padding-bottom: 18px;
+  }
+}
+
 .sellers__modal-img {
   margin: 0px auto 16px auto;
 }
@@ -157,12 +165,22 @@
   font-size: 14px;
   line-height: 17px;
   color: #111111;
+
+  display: block;
+  margin: 0 auto;
+  width: fit-content;
   padding: 8px 27px 8px 27px;
 }
 .sellers__slide {
-  max-width: 250px;
   height: 300px;
 }
+
+@media screen and (min-width: 768px) {
+  .sellers__slide {
+    height: fit-content;
+  }
+}
+
 .sellers__slide .swiper-pagination-bullet {
   width: 13px;
   height: 13px;
@@ -193,9 +211,16 @@
   position: fixed;
   width: 100%;
   max-width: 311px;
-  height: 1007px;
   padding: 32px 24px;
 }
+
+@media screen and (min-width: 768px) {
+  .sellers-modal {
+    max-width: 609px;
+    padding: 48px;
+  }
+}
+
 .sellers-modal.active,
 .sellers-thanks-modal.active {
   opacity: 1;
@@ -216,7 +241,7 @@
   cursor: pointer;
 }
 .modal-form {
-  margin-top: 8px;
+  margin-top: 24px;
 }
 
 .sellers__modal-title {
@@ -241,6 +266,19 @@
   letter-spacing: -0.02em;
   color: #000000;
 }
+
+@media screen and (min-width: 768px) {
+  .sellers-modal-form-input-descr {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .sellers-modal-form-input-wrapper_siblings {
+    flex-grow: 1;
+  }
+}
+
 .sellers-modal-form_input,
 .sellers-modal-form_message {
   width: 100%;
@@ -251,6 +289,14 @@
   border-radius: 8px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+@media screen and (min-width: 768px) {
+  .sellers-modal-form_input,
+  .sellers-modal-form_message {
+    padding: 22px 24px;
+  }
+}
+
 .sellerrs-modal-form_input {
   height: 45px;
 }
@@ -263,6 +309,12 @@
   height: 91px;
   resize: none;
   margin-bottom: 18px;
+}
+
+@media screen and (min-width: 768px) {
+  .sellers-modal-form_message {
+    height: 137px;
+  }
 }
 
 .sellers-modal-form_input:focus,
@@ -298,6 +350,15 @@
   position: relative;
 }
 
+@media screen and (min-width: 768px) {
+  .sellers-modal-form-field_flex {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 8px;
+    column-gap: 21px;
+  }
+}
+
 .sellers-input-prefix-wraper {
   position: absolute;
   top: 85%;
@@ -310,6 +371,14 @@
   height: 25px;
   border-right: 1px solid rgba(64, 64, 64, 0.3);
 }
+
+@media screen and (min-width: 768px) {
+  .sellers-input-prefix-wraper {
+    column-gap: 18px;
+    width: 106px;
+  }
+}
+
 .sellers-input-prefix-wraper-card {
   position: absolute;
   top: 43%;
@@ -318,9 +387,23 @@
   display: flex;
   align-items: center;
 }
+
+@media screen and (min-width: 768px) {
+  .sellers-input-prefix-wraper-card {
+    left: 450px;
+  }
+}
+
 .sellers-modal-form_input__iconed {
   padding-left: 106px;
 }
+
+@media screen and (min-width: 768px) {
+  .sellers-modal-form_input__iconed {
+    padding-left: 138px;
+  }
+}
+
 .sellers-modal_card-icon {
   width: 32px;
   height: 21px;

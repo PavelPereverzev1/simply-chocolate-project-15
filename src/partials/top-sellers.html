@@ -127,12 +127,14 @@
           <div class="sellers__modal-slide">
             <img
               srcset="
+                ./img/top-sellers/tablet1-120.png 120w,
                 ./img/top-sellers/mobile1-167.png 167w,
+                ./img/top-sellers/tablet1-240.png 240w,
                 ./img/top-sellers/mobile1-334.png 334w
               "
               src="./img/top-sellers/mobile1-167.png"
               alt="chocolate"
-              sizes="167px"
+              sizes="(min-width:768px) 120px, 167px"
               class="sellers__modal-img"
             />
             <span class="sellers__modal-prise">100 g</span>
@@ -142,12 +144,14 @@
           <div class="sellers__modal-slide">
             <img
               srcset="
+                ./img/top-sellers/tablet2-120.png 120w,
                 ./img/top-sellers/mobile2-167.png 167w,
+                ./img/top-sellers/tablet2-240.png 240w,
                 ./img/top-sellers/mobile2-334.png 334w
               "
               src="./img/top-sellers/mobile2-167.png"
               alt="chocolate"
-              sizes="167px"
+              sizes="(min-width:768px) 120px, 167px"
               class="sellers__modal-img"
             />
             <span class="sellers__modal-prise">200 g</span>
@@ -157,25 +161,29 @@
           <div class="sellers__modal-slide">
             <img
               srcset="
+                ./img/top-sellers/tablet3-120.png 120w,
                 ./img/top-sellers/mobile3-167.png 167w,
+                ./img/top-sellers/tablet3-240.png 240w,
                 ./img/top-sellers/mobile3-334.png 334w
               "
               src="./img/top-sellers/mobile3-167.png"
               alt="chocolate"
-              sizes="167px"
+              sizes="(min-width:768px) 120px, 167px"
               class="sellers__modal-img"
             />
             <span class="sellers__modal-prise">300 g</span>
           </div>
         </li>
       </ul>
-      <div class="swiper-pagination"></div>
+      <div class="swiper-pagination" style="bottom: 0px"></div>
     </div>
     <!-- form -->
     <form class="modal-form">
-      <label class="sellers-modal-form-field">
+      <label class="sellers-modal-form-field sellers-modal-form-field_flex">
         <span class="sellers-modal-form-input-descr">Personal information</span>
-        <span class="sellerrs-modal-form-input-wrapper">
+        <span
+          class="sellers-modal-form-input-wrapper sellers-modal-form-input-wrapper_siblings"
+        >
           <input
             type="text"
             name="Name"
@@ -186,7 +194,9 @@
             placeholder="Name"
           />
         </span>
-        <span class="sellerrs-modal-form-input-wrapper">
+        <span
+          class="sellers-modal-form-input-wrapper sellers-modal-form-input-wrapper_siblings"
+        >
           <input
             type="text"
             name="Surname"
@@ -200,7 +210,7 @@
       </label>
       <label class="sellers-modal-form-field">
         <span class="sellers-modal-form-input-descr">Email</span>
-        <span class="sellerrs-modal-form-input-wrapper">
+        <span class="sellers-modal-form-input-wrapper">
           <input
             type="email"
             name="user_email"
@@ -218,7 +228,7 @@
           </svg>
           <span class="sellers-phone-prefix">+380</span>
         </span>
-        <span class="sellerrs-modal-form-input-wrapper">
+        <span class="sellers-modal-form-input-wrapper">
           <input
             class="sellers-modal-form_input sellers-modal-form_input__iconed"
             name="user_phone"
@@ -234,7 +244,7 @@
 
       <label class="sellers-modal-form-field">
         <span class="sellers-modal-form-input-descr">Card number</span>
-        <span class="sellerrs-modal-form-input-wrapper">
+        <span class="sellers-modal-form-input-wrapper">
           <input
             type="tel"
             name="credit-number"
