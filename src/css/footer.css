@@ -36,7 +36,7 @@
   letter-spacing: -0.02em;
   color: var(--clr-text-secondary);
   margin-bottom: 4px;
-  transition: color var(--time-function);
+  transition: color 250ms var(--time-function);
 }
 
 .footer-email {
@@ -44,7 +44,7 @@
   line-height: 1.28;
   letter-spacing: -0.02em;
   color: var(--clr-text-secondary);
-  transition: color var(--time-function);
+  transition: color 250ms var(--time-function);
 }
 .footer-phone-number:hover,
 .footer-phone-number:focus {
@@ -59,10 +59,10 @@
   width: 22px;
   height: 22px;
   stroke: var(--clr-back-ground-primary);
-  fill:none;
-  transition: stroke var(--time-function);
+  fill: none;
+  transition: stroke 250ms var(--time-function);
 }
-.social-list-link-footer:focus .footer-social-list-icon{
+.social-list-link-footer:focus .footer-social-list-icon {
   stroke: var(--clr-back-ground-modified);
 }
 

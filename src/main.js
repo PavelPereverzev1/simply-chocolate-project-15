@@ -179,7 +179,7 @@ document.addEventListener('DOMContentLoaded', function () {
   var modalButtons = document.querySelectorAll('.js-open-modal'),
     overlay = document.querySelector('.js-overlay-modal'),
     closeButtons = document.querySelectorAll('.js-modal-close'),
-    submitButtons = document.querySelectorAll('[type="submit"]');
+    forms = document.querySelectorAll('form'); // выбираем формы документа
 
   /* Перебираем массив кнопок */
   modalButtons.forEach(function (item) {
@@ -204,6 +204,23 @@ document.addEventListener('DOMContentLoaded', function () {
       document.body.style.overflow = 'hidden';
     }); // end click
   }); // end foreach
+
+  forms.forEach(function (item) {
+    // перебираем формы
+    item.addEventListener('submit', function (e) {
+      // назначаем на каждую обработчик submit
+      e.preventDefault(); // прерываем submit
+      // останавливает цепочку вызова событий для следующих слушателей
+      e.stopImmediatePropagation();
+      var parentModal = this.closest('.modal');
+      parentModal.classList.remove('active');
+      item.reset();
+      var modalId = parentModal.getAttribute('data-modal'),
+        modalElem = document.querySelector(
+          '.modal[data-modal="' + modalId + modalId + '"]');
+        modalElem.classList.add('active');
+    });
+  });
 
   closeButtons.forEach(function (item) {
     item.addEventListener('click', function (e) {
@@ -241,14 +258,14 @@ document.addEventListener('DOMContentLoaded', function () {
 (() => {
   const refs = {
     openModalBtn: document.querySelector('[data-modal-open]'),
-    modal2: document.querySelector('[data-modal]'),
+    modal: document.querySelector('[data-modal]'),
     iframe: document.querySelector('.iframe'),
   };
 
   refs.openModalBtn.addEventListener('click', toggleModal);
 
   function toggleModal() {
-    refs.modal2.classList.toggle('visually-hidden');
+    refs.modal.classList.toggle('visually-hidden');
     refs.iframe.setAttribute(
       'src',
       'https://www.youtube-nocookie.com/embed/JgzkfO8nYKo?autoplay=1&autohide=1'

@@ -6,10 +6,10 @@
     <img
       class="sellers__img container-mobile__img"
       srcset="
-        ../img/top-sellers/mobile1-335.jpg 335w,
-        ../img/top-sellers/mobile1-670.jpg 670w
+        /img/top-sellers/mobile1-335.jpg 335w,
+        /img/top-sellers/mobile1-670.jpg 670w
       "
-      src="../img/top-sellers/mobile1-335.jpg"
+      src="/img/top-sellers/mobile1-335.jpg"
       alt=""
     />
     <p class="container-mobile__description">
@@ -20,10 +20,10 @@
     <img
       class="sellers__img container-mobile__img"
       srcset="
-        ../img/top-sellers/mobile2-335.jpg 335w,
-        ../img/top-sellers/mobile2-670.jpg 670w
+        /img/top-sellers/mobile2-335.jpg 335w,
+        /img/top-sellers/mobile2-670.jpg 670w
       "
-      src="../img/top-sellers/mobile2-335.jpg"
+      src="/img/top-sellers/mobile2-335.jpg"
       alt=""
     />
 
@@ -46,13 +46,13 @@
         <img
           class="sellers__img"
           srcset="
-            ../img/top-sellers/tablet1-344.jpg  344w,
-            ../img/top-sellers/tablet1-688.jpg  688w,
-            ../img/top-sellers/desktop1-368.jpg 368w,
-            ../img/top-sellers/desktop1-736.jpg 736w
+            /img/top-sellers/tablet1-344.jpg  344w,
+            /img/top-sellers/tablet1-688.jpg  688w,
+            /img/top-sellers/desktop1-368.jpg 368w,
+            /img/top-sellers/desktop1-736.jpg 736w
           "
           sizes="(min width: 1200px) 368px, (min width: 768px) 344px"
-          src="../img/top-sellers/mobile1-335.jpg"
+          src="/img/top-sellers/mobile1-335.jpg"
           alt=""
         />
       </li>
@@ -60,13 +60,13 @@
         <img
           class="sellers__img"
           srcset="
-            ../img/top-sellers/tablet2-344.jpg  344w,
-            ../img/top-sellers/tablet2-688.jpg  688w,
-            ../img/top-sellers/desktop2-368.jpg 368w,
-            ../img/top-sellers/desktop2-736.jpg 736w
+            /img/top-sellers/tablet2-344.jpg  344w,
+            /img/top-sellers/tablet2-688.jpg  688w,
+            /img/top-sellers/desktop2-368.jpg 368w,
+            /img/top-sellers/desktop2-736.jpg 736w
           "
           sizes="(min width: 1200px) 368px, (min width: 768px) 344px"
-          src="../img/top-sellers/mobile2-335.jpg"
+          src="/img/top-sellers/mobile2-335.jpg"
           alt=""
         />
       </li>
@@ -74,13 +74,13 @@
         <img
           class="sellers__img"
           srcset="
-            ../img/top-sellers/tablet3-344.jpg  344w,
-            ../img/top-sellers/tablet3-688.jpg  688w,
-            ../img/top-sellers/desktop3-368.jpg 368w,
-            ../img/top-sellers/desktop3-736.jpg 736w
+            /img/top-sellers/tablet3-344.jpg  344w,
+            /img/top-sellers/tablet3-688.jpg  688w,
+            /img/top-sellers/desktop3-368.jpg 368w,
+            /img/top-sellers/desktop3-736.jpg 736w
           "
           sizes="(min width: 1200px) 368px, (min width: 768px) 344px"
-          src="../img/top-sellers/mobile3-335.jpg"
+          src="/img/top-sellers/mobile3-335.jpg"
           alt=""
         />
       </li>
@@ -119,8 +119,10 @@
       buy <span class="sellers__modal-title2">now</span>
     </h2>
 
+
     <!-- products mobile version
         scrolling products will be hidden on tablet/desktop -->
+
     <div class="swiper sellers__slide">
       <ul class="swiper-wrapper sellers__modal-list">
         <li class="swiper-slide sellers__modal-item">
@@ -136,6 +138,58 @@
               alt="chocolate"
               sizes="(min-width:768px) 120px, 167px"
               class="sellers__modal-img"
+              />
+              <span class="sellers__modal-prise">100 g</span>
+            </div>
+          </li>
+          <li class="swiper-slide sellers__modal-item">
+            <div class="sellers__modal-slide">
+              <img
+                srcset="
+                  /img/top-sellers/mobile2-167.png 167w,
+                  /img/top-sellers/mobile2-334.png 334w
+                "
+                src="/img/top-sellers/mobile2-167.png"
+                alt="chocolate"
+                sizes="167px"
+                class="sellers__modal-img"
+              />
+              <span class="sellers__modal-prise">200 g</span>
+            </div>
+          </li>
+          <li class="swiper-slide sellers__modal-item">
+            <div class="sellers__modal-slide">
+              <img
+                srcset="
+                  /img/top-sellers/mobile3-167.png 167w,
+                  /img/top-sellers/mobile3-334.png 334w
+                "
+                src="/img/top-sellers/mobile3-167.png"
+                alt="chocolate"
+                sizes="167px"
+                class="sellers__modal-img"
+              />
+              <span class="sellers__modal-prise">300 g</span>
+            </div>
+          </li>
+        </ul>
+        <div class="swiper-pagination"></div>
+      </div>
+      <!-- form -->
+      <form class="modal-form">
+        <label class="sellers-modal-form-field">
+          <span class="sellers-modal-form-input-descr"
+            >Personal information</span
+          >
+          <span class="sellerrs-modal-form-input-wrapper">
+            <input
+              type="text"
+              name="Name"
+              class="sellers-modal-form_input"
+              required
+              pattern="[a-zA-Zа-яА-Я]+"
+              minlength="2"
+              placeholder="Name
             />
             <span class="sellers__modal-prise">100 g</span>
           </div>
@@ -241,7 +295,6 @@
           />
         </span>
       </label>
-
       <label class="sellers-modal-form-field">
         <span class="sellers-modal-form-input-descr">Card number</span>
         <span class="sellers-modal-form-input-wrapper">
@@ -282,7 +335,7 @@
   <div class="modal sellers-pop-up" data-modal="9">
     <button class="js-modal-close sellers-thanks-modal_close-btn" type="button">
       <svg class="sellers-thanks-modal_close-icon">
-        <use href="./img/symbol-defs.svg#icon-x-close"></use>
+        <use href="/img/symbol-defs.svg#icon-x-close"></use>
       </svg>
     </button>
     <h2 class="sellers-thanks-modal_title">thank you!</h2>
