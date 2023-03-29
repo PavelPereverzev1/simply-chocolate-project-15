@@ -30,12 +30,15 @@
   color: var(--clr-text-secondary);
   margin-bottom: 14px;
 }
+.footer-phone-number-margin{
+  margin-bottom: 4px;
+}
 .footer-phone-number {
   font-style: normal;
   line-height: 1.28;
   letter-spacing: -0.02em;
   color: var(--clr-text-secondary);
-  margin-bottom: 4px;
+
   transition: color 250ms var(--time-function);
 }
 
