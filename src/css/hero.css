@@ -13,17 +13,18 @@
 }
 
 @media (min-width: 1200px) {
-  .hero_container {
-    background-position: center;
-  }
+    .hero_container {
+        background-position: center;
+    }
 }
 
 @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .hero_container {
-    background-image: url(/img/hero/chocolate-covered-cocoa-powder@2x.jpg);
-  }
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .hero_container {
+        background-image: url(/img/hero/chocolate-covered-cocoa-powder@2x.jpg);
+    }
+
 }
 
 @media (min-width: 768px) {
@@ -49,13 +50,21 @@
 }
 
 .hero_content {
-  padding: 395px 20px 21px;
+
+    padding: 374px 20px 21px;
 }
 
+@media (min-width: 370px) {
+    .hero_content {
+        padding: 395px 20px 21px;
+    }
+    
+
 @media (min-width: 768px) {
-  .hero_content {
-    padding: 671px 40px 40px;
-  }
+    .hero_content {
+        padding: 671px 40px 40px;
+    }
+
 }
 
 @media (min-width: 1200px) {
@@ -79,13 +88,15 @@
 }
 
 .hero_title {
-  max-width: 299px;
-  margin-bottom: 32px;
 
-  font-weight: var(--font-weight-medium);
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: -0.03em;
+    max-width: 299px;
+    margin-bottom: 32px;
+
+    font-weight: var(--font-weight-medium);
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+
 
   color: var(--clr-text-secondary);
 }
@@ -127,8 +138,16 @@
   background: var(--clr-text-modified);
   color: var(--clr-text-secondary);
 
-  transition: background 250ms var(--time-function),
-    color 250ms var(--time-function);
+
+    transition: background 250ms var(--time-function), color 250ms var(--time-function);
+
+}
+
+@media (max-width: 370px) {
+    .hero_btn-buy {
+        padding: 10px 6px;
+    }
+
 }
 
 .hero_btn-buy:hover,
@@ -148,6 +167,12 @@
   color: var(--clr-text-secondary);
   transition: border 250ms var(--time-function),
     color 250ms var(--time-function);
+}
+
+@media (max-width: 370px) {
+    .hero_btn-made {
+        padding: 10px 6px;
+    }
 }
 
 .hero_btn-made:hover,
@@ -204,7 +229,10 @@
 
 .hero_link:hover .hero_svg,
 .hero_link:focus .hero_svg {
-  fill: var(--clr-text-secondary);
+
+    fill: var(--clr-text-secondary);
+    ;
+
 }
 
 .hero_link {
