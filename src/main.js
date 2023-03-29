@@ -91,14 +91,11 @@ const swiperSellers = new Swiper('.sellers__slide', {
   breakpoints: {
     //     // when window width is >= 320px
     768: {
-      slidesPerView: 2.5,
-      spaceBetween: 18,
+      slidesPerView: 3,
+      spaceBetween: 16,
     },
     //     // when window width is >= 480px
-    1200: {
-      slidesPerView: 4,
-      spaceBetween: 18,
-    },
+
     //     // when window width is >= 640px
     //     640: {
     //       slidesPerView: 4,
