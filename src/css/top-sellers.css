@@ -1,0 +1,433 @@
+.sellers {
+  padding-top: 72px;
+}
+
+@media screen and (min-width: 768px) {
+  .sellers {
+    padding-top: 100px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .sellers {
+    padding-top: 128px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .sellers__button {
+    font-size: 18px;
+    line-height: 1.22;
+
+    height: 50px;
+    padding: 14px 40px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container-mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container-desktop-tablet {
+    display: none;
+  }
+}
+
+.sellers__title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #111111;
+}
+
+@media screen and (min-width: 768px) {
+  .sellers__title {
+    font-size: 24px;
+    line-height: 1.17;
+
+    margin-bottom: 50px;
+  }
+}
+
+.container-mobile__title {
+  margin-bottom: 32px;
+}
+
+.sellers__title_accent {
+  color: #fd9222;
+}
+
+.sellers__img-list {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.sellers__img {
+  border-radius: 15px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .img-list__list-item_tablet-hidden {
+    display: none;
+  }
+}
+
+.container-mobile__img {
+  margin-bottom: 20px;
+}
+
+.sellers__flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-mobile__description {
+  margin-bottom: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .container-desktop-tablet__description {
+    max-width: 306px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container-desktop-tablet__description {
+    max-width: 407px;
+  }
+}
+
+.sellers__button {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  color: #ffffff;
+
+  background: #fd9222;
+  border-radius: 100px;
+  border-width: 0;
+  display: block;
+  padding: 12px 28px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sellers__button:hover,
+.sellers__button:focus {
+  background-color: #fcf1e0;
+  color: #fd9222;
+}
+
+@media screen and (min-width: 768px) {
+  .sellers__button {
+    font-size: 18px;
+    line-height: 1.22;
+
+    height: 50px;
+    padding: 14px 40px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+/* modal */
+
+.sellers__modal-slide {
+  background-color: #ffffff;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+  width: 231px;
+  text-align: center;
+  align-items: center;
+  margin: 0px auto;
+  padding: 32px 0px 32px 0px;
+}
+.sellers__modal-img {
+  margin: 0px auto 16px auto;
+}
+.sellers__modal-prise {
+  background: #fafafa;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 100px;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #111111;
+  padding: 8px 27px 8px 27px;
+}
+.sellers__slide {
+  max-width: 250px;
+  height: 300px;
+}
+.sellers__slide .swiper-pagination-bullet {
+  width: 13px;
+  height: 13px;
+  background: rgba(17, 17, 17, 0.7);
+}
+
+.sellers__slide .swiper-pagination-bullet-active {
+  width: 28px;
+  height: 13px;
+  border-radius: 32px;
+  background: #fd9222;
+}
+/* form */
+.sellers-backdrop {
+  /* opacity: 0;
+  visibility: hidden; */
+  position: fixed;
+  opacity: 0;
+  visibility: hidden;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 20;
+  transition: 0.3s all;
+}
+.sellers-modal {
+  /* opacity: 0;
+  visibility: hidden; */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 30;
+  background-color: #fafafa;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  transition: 0.3s all;
+  position: fixed;
+  width: 100%;
+  max-width: 311px;
+  height: 100%;
+  height: 1007px;
+  padding: 32px 24px;
+}
+.sellers-modal.active,
+.sellers-backdrop.active,
+.sellers-thanks-modal.active {
+  opacity: 1;
+  visibility: visible;
+}
+.sellers-modal-svg {
+  stroke: #111111;
+  width: 24px;
+  height: 24px;
+}
+.sellers-close-button,
+.sellers-thanks-modal_close-btn {
+  position: absolute;
+  right: 14px;
+  top: 14px;
+  background-color: #fafafa;
+  border: none;
+  cursor: pointer;
+}
+.modal-form {
+  margin-top: 8px;
+}
+
+.sellers__modal-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #fd9222;
+  margin-bottom: 32px;
+}
+.sellers__modal-title2 {
+  color: #111111;
+}
+.sellers-modal-form-input-descr {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: -0.02em;
+  color: #000000;
+}
+.sellers-modal-form_input,
+.sellers-modal-form_message {
+  width: 100%;
+  margin-bottom: 14px;
+  padding: 14px 18px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  color: black;
+  border-radius: 8px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.sellerrs-modal-form_input {
+  height: 45px;
+}
+
+.sellers-modal-form_input__iconed {
+  padding-left: 106px;
+}
+
+.sellers-modal-form_message {
+  height: 91px;
+  resize: none;
+  margin-bottom: 18px;
+}
+
+.sellers-modal-form_input:focus,
+.sellers-modal-form_message:focus {
+  border-color: #fd9222;
+  outline: none;
+}
+
+.sellers-modal-form_input::placeholder,
+.sellers-modal-form_message::placeholder {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: -0.02em;
+  color: rgba(64, 64, 64, 0.3);
+}
+.sellers-modal_country-icon {
+  width: 24px;
+  height: 18px;
+}
+
+.sellers-phone-prefix {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: -0.02em;
+  color: #000;
+}
+
+.sellers-modal-form-field {
+  position: relative;
+}
+
+.sellers-input-prefix-wraper {
+  position: absolute;
+  top: 85%;
+  transform: translateY(-50%);
+  left: 18px;
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  width: 74px;
+  height: 25px;
+  border-right: 1px solid rgba(64, 64, 64, 0.3);
+}
+.sellers-input-prefix-wraper-card {
+  position: absolute;
+  top: 43%;
+  transform: translateY(-50%);
+  left: 220px;
+  display: flex;
+  align-items: center;
+}
+.sellers-modal-form_input__iconed {
+  padding-left: 106px;
+}
+.sellers-modal_card-icon {
+  width: 32px;
+  height: 21px;
+}
+.sellers-modal-form_submit-btn {
+  padding: 12px 28px;
+  background-color: #fd9222;
+  height: 41px;
+  min-width: 93px;
+  border-radius: 100px;
+  border: none;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  color: #ffffff;
+  display: block;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sellers-modal-form_submit-btn:hover,
+.sellers-modal-form_submit-btn:focus {
+  color: #fd9222;
+  background-color: #fcf1e0;
+}
+
+/* pop-up */
+.sellers-pop-up {
+  opacity: 0;
+  visibility: hidden;
+
+  width: 100%;
+  max-width: 310px;
+  height: 350px;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 30;
+
+  overflow: hidden;
+  border-radius: 15px;
+  background-color: var(--clr-back-ground-modified);
+  padding: 84px 24px 170px 68px;
+  transition: all 250ms var(--time-function);
+}
+
+.sellers-thanks-modal_close-btn {
+  width: 28px;
+  height: 28px;
+  background-color: #fcf1e0;
+  border-radius: 50%;
+  padding: 6px;
+}
+
+.sellers-thanks-modal_close-icon {
+  width: 16px;
+  height: 16px;
+  stroke: #d44528;
+}
+
+.sellers-thanks-modal_title {
+  margin-bottom: 8px;
+  text-align: left;
+  color: var(--clr-text-modal-modified);
+}
+
+.sellers-thanks-modal_text {
+  text-align: left;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+  color: var(--clr-text-secondary);
+}
+
+.sellers-pop-up::after {
+  position: absolute;
+  left: 0;
+  bottom: -7px;
+  content: url(/img/reviews/chocolate-bar-mobile.webp);
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 1200px) and (min-resolution: 192dpi),
+  screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .sellers-pop-up::after {
+    content: url(/img/reviews/chocolate-bar-mobile@2x.webp);
+  }
+}
