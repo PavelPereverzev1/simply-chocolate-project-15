@@ -1,11 +1,19 @@
 .product {
-  padding: 72px 0px 72px 0px;
+  padding-top: 72px;
 }
+
 @media screen and (min-width: 768px) {
   .product {
-    padding: 100px 0px 100px 0px;
+    padding-top: 100px;
   }
 }
+
+@media screen and (min-width: 1200px) {
+  .product {
+    padding-top: 128px;
+  }
+}
+
 .product__title {
   color: #111111;
 
@@ -60,8 +68,6 @@
   line-height: 17px;
   color: #111111;
   padding: 8px 20px 8px 20px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .product__box {
   background-color: #ffffff;
@@ -82,11 +88,7 @@
   align-items: center;
   margin: 0px auto 8px auto;
 }
-.product__btn:hover,
-.product__btn:focus {
-  background-color: #fd9222;
-  color: #ffffff;
-}
+
 .product__slider {
   max-width: 350px;
   height: 425px;

@@ -83,8 +83,12 @@
   --time-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
 
   font-size: 14px;
   line-height: 24px;

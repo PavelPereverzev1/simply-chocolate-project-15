@@ -25,98 +25,128 @@
   });
 })();
 
-
 // настройка слайдера для rewiews
-const swiper = new Swiper(".rewiews-slider", {
-   // Optional parameters
- 
-   loop: false,
- 
-   // If we need pagination
-   pagination: {
-     el: ".swiper-pagination",
-     clickable: true,
-     dynamicBullets: false,
-   },
- 
-  
-   
-   slidesPerView: 1,
-   spaceBetween: 20,
-   //   autoplay: {
-   //     delay: 1000,
-   //     disableOnInteraction: false,
-   //     stopOnLastSlide: false,
- 
-   //   },
-   speed: 1000,
-     breakpoints: {
-   //     // when window width is >= 320px
-         768: {
-            slidesPerView: 2,
-            spaceBetween: 16
-         },
-   //     // when window width is >= 480px
-         1200: {
-            slidesPerView: 3,
-            spaceBetween: 28
-         },
-   //     // when window width is >= 640px
-   //     640: {
-   //       slidesPerView: 4,
-   //       spaceBetween: 40
-   //     }
-     }
- });
+const swiper = new Swiper('.rewiews-slider', {
+  // Optional parameters
 
- 
+  loop: false,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    dynamicBullets: false,
+  },
+
+  slidesPerView: 1,
+  spaceBetween: 20,
+  //   autoplay: {
+  //     delay: 1000,
+  //     disableOnInteraction: false,
+  //     stopOnLastSlide: false,
+
+  //   },
+  speed: 1000,
+  breakpoints: {
+    //     // when window width is >= 320px
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 16,
+    },
+    //     // when window width is >= 480px
+    1200: {
+      slidesPerView: 3,
+      spaceBetween: 28,
+    },
+    //     // when window width is >= 640px
+    //     640: {
+    //       slidesPerView: 4,
+    //       spaceBetween: 40
+    //     }
+  },
+});
+
+// настройка слайдера для sellers-modal
+const swiperSellers = new Swiper('.sellers__slide', {
+  // Optional parameters
+
+  loop: false,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    dynamicBullets: false,
+  },
+
+  slidesPerView: 1,
+  spaceBetween: 20,
+  //   autoplay: {
+  //     delay: 1000,
+  //     disableOnInteraction: false,
+  //     stopOnLastSlide: false,
+
+  //   },
+  speed: 1000,
+  breakpoints: {
+    //     // when window width is >= 320px
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 16,
+    },
+    //     // when window width is >= 480px
+
+    //     // when window width is >= 640px
+    //     640: {
+    //       slidesPerView: 4,
+    //       spaceBetween: 40
+    //     }
+  },
+});
 // настройка слайдера для product
-const swiperProduct = new Swiper(".product__slider", {
-   // Optional parameters
- 
-   loop: false,
- 
-   // If we need pagination
-   pagination: {
-     el: ".swiper-pagination",
-     clickable: true,
-     dynamicBullets: false,
-   },
- 
-  
-   
-   slidesPerView: 1,
-   spaceBetween: 20,
-   //   autoplay: {
-   //     delay: 1000,
-   //     disableOnInteraction: false,
-   //     stopOnLastSlide: false,
- 
-   //   },
-   speed: 1000,
-     breakpoints: {
-   //     // when window width is >= 320px
-         768: {
-            slidesPerView: 2.5,
-            spaceBetween: 18
-         },
-   //     // when window width is >= 480px
-         1200: {
-            slidesPerView: 4,
-            spaceBetween: 18
-         },
-   //     // when window width is >= 640px
-   //     640: {
-   //       slidesPerView: 4,
-   //       spaceBetween: 40
-   //     }
-     }
- });
+const swiperProduct = new Swiper('.product__slider', {
+  // Optional parameters
 
+  loop: false,
 
- // скрипт модалки====================
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    dynamicBullets: false,
+  },
 
- !(function (e) {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  //   autoplay: {
+  //     delay: 1000,
+  //     disableOnInteraction: false,
+  //     stopOnLastSlide: false,
+
+  //   },
+  speed: 1000,
+  breakpoints: {
+    //     // when window width is >= 320px
+    768: {
+      slidesPerView: 2.5,
+      spaceBetween: 18,
+    },
+    //     // when window width is >= 480px
+    1200: {
+      slidesPerView: 4,
+      spaceBetween: 18,
+    },
+    //     // when window width is >= 640px
+    //     640: {
+    //       slidesPerView: 4,
+    //       spaceBetween: 40
+    //     }
+  },
+});
+
+// скрипт модалки====================
+
+!(function (e) {
   'function' != typeof e.matches &&
     (e.matches =
       e.msMatchesSelector ||
@@ -148,7 +178,8 @@ document.addEventListener('DOMContentLoaded', function () {
       Подложке зададим id, чтобы не влиять на другие элементы с классом overlay*/
   var modalButtons = document.querySelectorAll('.js-open-modal'),
     overlay = document.querySelector('.js-overlay-modal'),
-    closeButtons = document.querySelectorAll('.js-modal-close');
+    closeButtons = document.querySelectorAll('.js-modal-close'),
+    forms = document.querySelectorAll('form'); // выбираем формы документа
 
   /* Перебираем массив кнопок */
   modalButtons.forEach(function (item) {
@@ -174,6 +205,23 @@ document.addEventListener('DOMContentLoaded', function () {
     }); // end click
   }); // end foreach
 
+  forms.forEach(function (item) {
+    // перебираем формы
+    item.addEventListener('submit', function (e) {
+      // назначаем на каждую обработчик submit
+      e.preventDefault(); // прерываем submit
+      // останавливает цепочку вызова событий для следующих слушателей
+      e.stopImmediatePropagation();
+      var parentModal = this.closest('.modal');
+      parentModal.classList.remove('active');
+      item.reset();
+      var modalId = parentModal.getAttribute('data-modal'),
+        modalElem = document.querySelector(
+          '.modal[data-modal="' + modalId + modalId + '"]');
+        modalElem.classList.add('active');
+    });
+  });
+
   closeButtons.forEach(function (item) {
     item.addEventListener('click', function (e) {
       var parentModal = this.closest('.modal');
@@ -183,21 +231,6 @@ document.addEventListener('DOMContentLoaded', function () {
       document.body.style.overflow = '';
     });
   }); // end foreach
-
-  // var popup = function(e) {
-  //   e.preventDefault();
-  //   parentModal = e.closest('.modal');
-  //   parentModal.classList.remove('active');
-  // };
-
-  // var elementForm = document.querySelectorAll('.form');
-  // elementForm.forEach(function(){
-  //   this.addEventListener('submit', popup(this));
-  // })
-  
-  
-
-
 
   document.body.addEventListener(
     'keyup',
@@ -221,3 +254,22 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // конец скрипта модалки
 
+//HOW-MADE SECTIOM
+(() => {
+  const refs = {
+    openModalBtn: document.querySelector('[data-modal-open]'),
+    modal: document.querySelector('[data-modal]'),
+    iframe: document.querySelector('.iframe'),
+  };
+
+  refs.openModalBtn.addEventListener('click', toggleModal);
+
+  function toggleModal() {
+    refs.modal.classList.toggle('visually-hidden');
+    refs.iframe.setAttribute(
+      'src',
+      'https://www.youtube-nocookie.com/embed/JgzkfO8nYKo?autoplay=1&autohide=1'
+    );
+    refs.iframe.style.display = 'block';
+  }
+})();
