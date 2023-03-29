@@ -10,6 +10,7 @@
         /img/top-sellers/mobile1-670.jpg 670w
       "
       src="/img/top-sellers/mobile1-335.jpg"
+      sizes="(max-widht:767px) 335px, 344px"
       alt=""
     />
     <p class="container-mobile__description">
@@ -24,6 +25,7 @@
         /img/top-sellers/mobile2-670.jpg 670w
       "
       src="/img/top-sellers/mobile2-335.jpg"
+      sizes="(max-widht:767px) 335px, 344px"
       alt=""
     />
 
@@ -51,7 +53,7 @@
             /img/top-sellers/desktop1-368.jpg 368w,
             /img/top-sellers/desktop1-736.jpg 736w
           "
-          sizes="(min width: 1200px) 368px, (min width: 768px) 344px"
+          sizes="(min-width: 1200px) 368px, (min-width: 768px) 344px"
           src="/img/top-sellers/mobile1-335.jpg"
           alt=""
         />
@@ -65,7 +67,7 @@
             /img/top-sellers/desktop2-368.jpg 368w,
             /img/top-sellers/desktop2-736.jpg 736w
           "
-          sizes="(min width: 1200px) 368px, (min width: 768px) 344px"
+          sizes="(min-width: 1200px) 368px, (min-width: 768px) 344px"
           src="/img/top-sellers/mobile2-335.jpg"
           alt=""
         />
@@ -79,7 +81,7 @@
             /img/top-sellers/desktop3-368.jpg 368w,
             /img/top-sellers/desktop3-736.jpg 736w
           "
-          sizes="(min width: 1200px) 368px, (min width: 768px) 344px"
+          sizes="(min-width: 1200px) 368px, (min-width: 768px) 344px"
           src="/img/top-sellers/mobile3-335.jpg"
           alt=""
         />
@@ -103,7 +105,9 @@
   <!-- ==================
       markup modals
    ================== -->
-
+    <div class="sellers-modal-wraper">
+      
+    </div>
   <div class="modal sellers-modal" data-modal="1">
     <button type="button" class="js-modal-close sellers-close-button">
       <svg class="sellers-modal-svg" width="24" height="24">
@@ -137,7 +141,7 @@
               src="./img/top-sellers/mobile1-167.png"
               alt="chocolate"
               sizes="(min-width:768px) 120px, 167px"
-              class="sellers__modal-img"
+              class="sellers__modal-img sellers__modal-img_small"
               />
               <span class="sellers__modal-prise">100 g</span>
             </div>
@@ -177,7 +181,7 @@
       </div>
     <!-- form -->
     <form class="modal-form">
-      <label class="sellers-modal-form-field sellers-modal-form-field_flex">
+      <div class="sellers-modal-form-field sellers-modal-form-field_flex">
         <span class="sellers-modal-form-input-descr">Personal information</span>
         <span
           class="sellers-modal-form-input-wrapper sellers-modal-form-input-wrapper_siblings"
@@ -205,7 +209,7 @@
             placeholder="Surname"
           />
         </span>
-      </label>
+      </div>
       <label class="sellers-modal-form-field">
         <span class="sellers-modal-form-input-descr">Email</span>
         <span class="sellers-modal-form-input-wrapper">
@@ -248,7 +252,7 @@
             class="sellers-modal-form_input"
             required
             placeholder="Enter card"
-            pattern="[0-9\s]{13,19}"
+            
             maxlength="19"
             inputmode="numeric"
           />
@@ -276,7 +280,7 @@
   </div>
 
   <!-- pop-up -->
-  <div class="modal sellers-pop-up" data-modal="9">
+  <div class="modal sellers-pop-up" data-modal="11">
     <button class="js-modal-close sellers-thanks-modal_close-btn" type="button">
       <svg class="sellers-thanks-modal_close-icon">
         <use href="/img/symbol-defs.svg#icon-x-close"></use>

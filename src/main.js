@@ -36,6 +36,7 @@ const swiper = new Swiper('.rewiews-slider', {
     el: '.swiper-pagination',
     clickable: true,
     dynamicBullets: false,
+    dinamicMainBullets:3,
   },
 
   slidesPerView: 1,
