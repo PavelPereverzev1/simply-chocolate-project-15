@@ -84,7 +84,7 @@
   .components-in-picture-subtitle {
     font-weight: 600;
     font-size: 14px;
-    line-height: 18px;
+    line-height: 1.29;
     letter-spacing: -0.02em;
     text-transform: uppercase;
     color: #111111;
@@ -95,7 +95,7 @@
   .components-in-picture-subtitle-white {
     font-weight: 600;
     font-size: 14px;
-    line-height: 18px;
+    line-height: 1.29;
     letter-spacing: -0.02em;
     text-transform: uppercase;
     color: #ffffff;
@@ -331,7 +331,7 @@
   .components-in-picture-subtitle-white {
     font-weight: 600;
     font-size: 14px;
-    line-height: 18px;
+    line-height: 1.29;
     letter-spacing: -0.02em;
     text-transform: uppercase;
     color: #ffffff;
@@ -555,7 +555,7 @@
   .components-in-picture-subtitle {
     font-weight: 600;
     font-size: 14px;
-    line-height: 18px;
+    line-height: 1.29;
     letter-spacing: -0.02em;
     text-transform: uppercase;
     color: #111111;
@@ -566,7 +566,7 @@
   .components-in-picture-subtitle-white {
     font-weight: 600;
     font-size: 14px;
-    line-height: 18px;
+    line-height: 1.29;
     letter-spacing: -0.02em;
     text-transform: uppercase;
     color: #ffffff;

@@ -170,7 +170,7 @@
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
-  line-height: 17px;
+  line-height: 1.21;
   color: #111111;
 
   display: block;
@@ -209,7 +209,7 @@
   background: #fd9222;
 }
 /* form */
-.sellers-modal-wraper{
+.sellers-modal-wraper {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
@@ -226,7 +226,7 @@
   transition: all 250ms var(--time-function);
 }
 
-.sellers-modal-wraper::-webkit-scrollbar{
+.sellers-modal-wraper::-webkit-scrollbar {
   display: none;
 }
 
@@ -245,8 +245,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  
-  .sellers-modal-wraper{
+  .sellers-modal-wraper {
     width: 611px;
   }
   .sellers-modal {
@@ -283,7 +282,7 @@
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
-  line-height: 24px;
+  line-height: 1.2;
   text-align: center;
   letter-spacing: -0.03em;
   text-transform: uppercase;
@@ -297,7 +296,7 @@
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
-  line-height: 14px;
+  line-height: 1.17;
   letter-spacing: -0.02em;
   color: #000000;
 }
@@ -306,8 +305,6 @@
   .sellers-modal-form-input-descr {
     width: 100%;
   }
-
-
 }
 
 @media screen and (min-width: 768px) {
@@ -490,7 +487,7 @@
   transition: all 250ms var(--time-function);
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
   .reviews-thanks-modal {
     width: 100%;
     max-width: 516px;
