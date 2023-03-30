@@ -14,8 +14,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
     
-    <script type="module" crossorigin src="/simply-chocolate-project-15/assets/index-183a31e2.js"></script>
-    <link rel="stylesheet" href="/simply-chocolate-project-15/assets/index-e27ab2d9.css">
+    <script type="module" crossorigin src="/simply-chocolate-project-15/assets/index-a11bda16.js"></script>
+    <link rel="stylesheet" href="/simply-chocolate-project-15/assets/index-2921a2c2.css">
   </head>
   <body>
     <!-- Ростислав -->
@@ -130,7 +130,7 @@
         </h2>
         <div class="hero_lower">
           <div class="hero_btn-container hero_btn">
-            <button class="hero_btn-buy" type="button">Buy now</button>
+            <button class="hero_btn-buy js-open-modal" data-modal="1" type="button">Buy now</button>
             <a class="hero_btn-made" type="button" href="#how_made">
               How it's made
             </a>
@@ -645,6 +645,7 @@
       class="sellers__img container-mobile__img"
       srcset="/simply-chocolate-project-15/assets/mobile1-335-239b7846.jpg 335w, /simply-chocolate-project-15/assets/mobile1-670-f8564772.jpg 670w"
       src="/simply-chocolate-project-15/assets/mobile1-335-239b7846.jpg"
+      sizes="(max-widht:767px) 335px, 344px"
       alt=""
     />
     <p class="container-mobile__description">
@@ -656,6 +657,7 @@
       class="sellers__img container-mobile__img"
       srcset="/simply-chocolate-project-15/assets/mobile2-335-d7dda0b9.jpg 335w, /simply-chocolate-project-15/assets/mobile2-670-7f4d5d10.jpg 670w"
       src="/simply-chocolate-project-15/assets/mobile2-335-d7dda0b9.jpg"
+      sizes="(max-widht:767px) 335px, 344px"
       alt=""
     />
 
@@ -678,7 +680,7 @@
         <img
           class="sellers__img"
           srcset="/simply-chocolate-project-15/assets/tablet1-344-09f7b4d1.jpg 344w, /simply-chocolate-project-15/assets/tablet1-688-4154a0ec.jpg 688w, /simply-chocolate-project-15/assets/desktop1-368-3ddb9a44.jpg 368w, /simply-chocolate-project-15/assets/desktop1-736-2dcc0e67.jpg 736w"
-          sizes="(min width: 1200px) 368px, (min width: 768px) 344px"
+          sizes="(min-width: 1200px) 368px, (min-width: 768px) 344px"
           src="/simply-chocolate-project-15/assets/mobile1-335-239b7846.jpg"
           alt=""
         />
@@ -687,7 +689,7 @@
         <img
           class="sellers__img"
           srcset="/simply-chocolate-project-15/assets/tablet2-344-fbc84831.jpg 344w, /simply-chocolate-project-15/assets/tablet2-688-277a9b36.jpg 688w, /simply-chocolate-project-15/assets/desktop2-368-f1a9ccbb.jpg 368w, /simply-chocolate-project-15/assets/desktop2-736-fc1cc593.jpg 736w"
-          sizes="(min width: 1200px) 368px, (min width: 768px) 344px"
+          sizes="(min-width: 1200px) 368px, (min-width: 768px) 344px"
           src="/simply-chocolate-project-15/assets/mobile2-335-d7dda0b9.jpg"
           alt=""
         />
@@ -701,8 +703,8 @@
             /img/top-sellers/desktop3-368.jpg 368w,
             /img/top-sellers/desktop3-736.jpg 736w
           "
-          sizes="(min width: 1200px) 368px, (min width: 768px) 344px"
-          src="/img/top-sellers/mobile3-335.jpg"
+          sizes="(min-width: 1200px) 368px, (min-width: 768px) 344px"
+          src="/simply-chocolate-project-15/assets/mobile3-335-387f07b9.jpg"
           alt=""
         />
       </li>
@@ -725,168 +727,170 @@
   <!-- ==================
       markup modals
    ================== -->
-
-  <div class="modal sellers-modal" data-modal="1">
-    <button type="button" class="js-modal-close sellers-close-button">
-      <svg class="sellers-modal-svg" width="24" height="24">
-        <use
-          href="/simply-chocolate-project-15/assets/symbol-defs-39dc2d95.svg#icon-x-close"
-          width="24"
-          height="24"
-        ></use>
-      </svg>
-    </button>
-    <!-- sellers-backdrop.  sellers-modal-->
-    <h2 class="sellers__modal-title">
-      buy <span class="sellers__modal-title2">now</span>
-    </h2>
-
-    <!-- products mobile version
-        scrolling products will be hidden on tablet/desktop -->
-
-    <div class="swiper sellers__slide">
-      <ul class="swiper-wrapper sellers__modal-list">
-        <li class="swiper-slide sellers__modal-item">
-          <div class="sellers__modal-slide">
-            <img
-              srcset="/simply-chocolate-project-15/assets/tablet1-120-de4d37ed.png 120w, /simply-chocolate-project-15/assets/mobile1-167-abccff14.png 167w, /simply-chocolate-project-15/assets/tablet1-240-61df17ac.png 240w, /simply-chocolate-project-15/assets/mobile1-334-f51ef21d.png 334w"
-              src="/simply-chocolate-project-15/assets/mobile1-167-abccff14.png"
-              alt="chocolate"
-              sizes="(min-width:768px) 120px, 167px"
-              class="sellers__modal-img"
-            />
-            <span class="sellers__modal-prise">100 g</span>
-          </div>
-        </li>
-        <li class="swiper-slide sellers__modal-item">
-          <div class="sellers__modal-slide">
-            <img
-              srcset="/simply-chocolate-project-15/assets/mobile2-167-c7411286.png 167w, /simply-chocolate-project-15/assets/mobile2-334-eea00b5d.png 334w"
-              src="/simply-chocolate-project-15/assets/mobile2-167-c7411286.png"
-              alt="chocolate"
-              sizes="167px"
-              class="sellers__modal-img"
-            />
-            <span class="sellers__modal-prise">200 g</span>
-          </div>
-        </li>
-        <li class="swiper-slide sellers__modal-item">
-          <div class="sellers__modal-slide">
-            <img
-              srcset="/simply-chocolate-project-15/assets/mobile3-167-b69f8fcb.png 167w, /simply-chocolate-project-15/assets/mobile3-334-59c13d51.png 334w"
-              src="/simply-chocolate-project-15/assets/mobile3-167-b69f8fcb.png"
-              alt="chocolate"
-              sizes="167px"
-              class="sellers__modal-img"
-            />
-            <span class="sellers__modal-prise">300 g</span>
-          </div>
-        </li>
-      </ul>
-      <div class="swiper-pagination"></div>
-    </div>
-    <!-- form -->
-    <form class="modal-form">
-      <label class="sellers-modal-form-field sellers-modal-form-field_flex">
-        <span class="sellers-modal-form-input-descr">Personal information</span>
-        <span
-          class="sellers-modal-form-input-wrapper sellers-modal-form-input-wrapper_siblings"
-        >
-          <input
-            type="text"
-            name="Name"
-            class="sellers-modal-form_input"
-            required
-            pattern="[a-zA-Zа-яА-Я]+"
-            minlength="2"
-            placeholder="Name"
-          />
-        </span>
-        <span
-          class="sellers-modal-form-input-wrapper sellers-modal-form-input-wrapper_siblings"
-        >
-          <input
-            type="text"
-            name="Surname"
-            class="sellers-modal-form_input"
-            required
-            pattern="[a-zA-Zа-яА-Я]+"
-            minlength="2"
-            placeholder="Surname"
-          />
-        </span>
-      </label>
-      <label class="sellers-modal-form-field">
-        <span class="sellers-modal-form-input-descr">Email</span>
-        <span class="sellers-modal-form-input-wrapper">
-          <input
-            type="email"
-            name="user_email"
-            class="sellers-modal-form_input"
-            required
-            placeholder="Enter your email"
-          />
-        </span>
-      </label>
-      <label class="sellers-modal-form-field">
-        <span class="sellers-modal-form-input-descr">Phone number</span>
-        <span class="sellers-input-prefix-wraper">
-          <svg class="sellers-modal_country-icon">
-            <use href="/simply-chocolate-project-15/assets/symbol-defs-39dc2d95.svg#icon-ukraine"></use>
-          </svg>
-          <span class="sellers-phone-prefix">+380</span>
-        </span>
-        <span class="sellers-modal-form-input-wrapper">
-          <input
-            class="sellers-modal-form_input sellers-modal-form_input__iconed"
-            name="user_phone"
-            type="tel"
-            placeholder="Phone number"
-            required
-            pattern="^[0-9]{3}-[0-9]{2}-[0-9]{2}$"
-            title="xxx-xx-xx"
-            minlength="7"
-          />
-        </span>
-      </label>
-      <label class="sellers-modal-form-field">
-        <span class="sellers-modal-form-input-descr">Card number</span>
-        <span class="sellers-modal-form-input-wrapper">
-          <input
-            type="tel"
-            name="credit-number"
-            class="sellers-modal-form_input"
-            required
-            placeholder="Enter card"
-            pattern="[0-9\s]{13,19}"
-            maxlength="19"
-            inputmode="numeric"
-          />
-          <span class="sellers-input-prefix-wraper-card">
-            <svg class="sellers-modal_card-icon">
-              <use href="/simply-chocolate-project-15/assets/symbol-defs-39dc2d95.svg#icon-mastercard"></use>
-            </svg>
-          </span>
-        </span>
-      </label>
-
-      <label class="sellers-modal-form-field textarea-field">
-        <span class="sellers-modal-form-input-descr">Comment</span>
-        <textarea
-          name="user_message"
-          class="sellers-modal-form_message"
-          placeholder="Enter text"
-        ></textarea>
-      </label>
-
-      <button type="submit" class="sellers-modal-form_submit-btn">
-        Submit
+  <div class="modal sellers-modal-wraper " data-modal="1">
+    <div class="sellers-modal" >
+      <button type="button" class="js-modal-close sellers-close-button">
+        <svg class="sellers-modal-svg" width="24" height="24">
+          <use
+            href="/simply-chocolate-project-15/assets/symbol-defs-39dc2d95.svg#icon-x-close"
+            width="24"
+            height="24"
+          ></use>
+        </svg>
       </button>
-    </form>
+      <!-- sellers-backdrop.  sellers-modal-->
+      <h2 class="sellers__modal-title">
+        buy <span class="sellers__modal-title2">now</span>
+      </h2>
+
+      <!-- products mobile version
+            scrolling products will be hidden on tablet/desktop -->
+
+      <div class="swiper sellers__slide">
+        <ul class="swiper-wrapper sellers__modal-list">
+          <li class="swiper-slide sellers__modal-item">
+            <div class="sellers__modal-slide">
+              <img
+                srcset="/simply-chocolate-project-15/assets/tablet1-120-de4d37ed.png 120w, /simply-chocolate-project-15/assets/mobile1-167-abccff14.png 167w, /simply-chocolate-project-15/assets/tablet1-240-61df17ac.png 240w, /simply-chocolate-project-15/assets/mobile1-334-f51ef21d.png 334w"
+                src="/simply-chocolate-project-15/assets/mobile1-167-abccff14.png"
+                alt="chocolate"
+                sizes="(min-width:768px) 120px, 167px"
+                class="sellers__modal-img sellers__modal-img_small"
+              />
+              <span class="sellers__modal-prise">100 g</span>
+            </div>
+          </li>
+          <li class="swiper-slide sellers__modal-item">
+            <div class="sellers__modal-slide">
+              <img
+                srcset="/simply-chocolate-project-15/assets/mobile2-167-c7411286.png 167w, /simply-chocolate-project-15/assets/mobile2-334-eea00b5d.png 334w"
+                src="/simply-chocolate-project-15/assets/mobile2-167-c7411286.png"
+                alt="chocolate"
+                sizes="167px"
+                class="sellers__modal-img"
+              />
+              <span class="sellers__modal-prise">200 g</span>
+            </div>
+          </li>
+          <li class="swiper-slide sellers__modal-item">
+            <div class="sellers__modal-slide">
+              <img
+                srcset="/simply-chocolate-project-15/assets/mobile3-167-b69f8fcb.png 167w, /simply-chocolate-project-15/assets/mobile3-334-59c13d51.png 334w"
+                src="/simply-chocolate-project-15/assets/mobile3-167-b69f8fcb.png"
+                alt="chocolate"
+                sizes="167px"
+                class="sellers__modal-img"
+              />
+              <span class="sellers__modal-prise">300 g</span>
+            </div>
+          </li>
+        </ul>
+        <div class="swiper-pagination"></div>
+      </div>
+      <!-- form -->
+      <form class="modal-form">
+        <div class="sellers-modal-form-field sellers-modal-form-field_flex">
+          <span class="sellers-modal-form-input-descr"
+            >Personal information</span
+          >
+          <span
+            class="sellers-modal-form-input-wrapper sellers-modal-form-input-wrapper_siblings"
+          >
+            <input
+              type="text"
+              name="Name"
+              class="sellers-modal-form_input"
+              required
+              pattern="[a-zA-Zа-яА-Я]+"
+              minlength="2"
+              placeholder="Name"
+            />
+          </span>
+          <span
+            class="sellers-modal-form-input-wrapper sellers-modal-form-input-wrapper_siblings"
+          >
+            <input
+              type="text"
+              name="Surname"
+              class="sellers-modal-form_input"
+              required
+              pattern="[a-zA-Zа-яА-Я]+"
+              minlength="2"
+              placeholder="Surname"
+            />
+          </span>
+        </div>
+        <label class="sellers-modal-form-field">
+          <span class="sellers-modal-form-input-descr">Email</span>
+          <span class="sellers-modal-form-input-wrapper">
+            <input
+              type="email"
+              name="user_email"
+              class="sellers-modal-form_input"
+              required
+              placeholder="Enter your email"
+            />
+          </span>
+        </label>
+        <label class="sellers-modal-form-field">
+          <span class="sellers-modal-form-input-descr">Phone number</span>
+          <span class="sellers-input-prefix-wraper">
+            <svg class="sellers-modal_country-icon">
+              <use href="/simply-chocolate-project-15/assets/symbol-defs-39dc2d95.svg#icon-ukraine"></use>
+            </svg>
+            <span class="sellers-phone-prefix">+380</span>
+          </span>
+          <span class="sellers-modal-form-input-wrapper">
+            <input
+              class="sellers-modal-form_input sellers-modal-form_input__iconed"
+              name="user_phone"
+              type="tel"
+              placeholder="Phone number"
+              required
+              pattern="^[0-9]{3}-[0-9]{2}-[0-9]{2}$"
+              title="xxx-xx-xx"
+              minlength="7"
+            />
+          </span>
+        </label>
+        <label class="sellers-modal-form-field">
+          <span class="sellers-modal-form-input-descr">Card number</span>
+          <span class="sellers-modal-form-input-wrapper">
+            <input
+              type="tel"
+              name="credit-number"
+              class="sellers-modal-form_input"
+              required
+              placeholder="Enter card"
+              maxlength="19"
+              inputmode="numeric"
+            />
+            <span class="sellers-input-prefix-wraper-card">
+              <svg class="sellers-modal_card-icon">
+                <use href="/simply-chocolate-project-15/assets/symbol-defs-39dc2d95.svg#icon-mastercard"></use>
+              </svg>
+            </span>
+          </span>
+        </label>
+
+        <label class="sellers-modal-form-field textarea-field">
+          <span class="sellers-modal-form-input-descr">Comment</span>
+          <textarea
+            name="user_message"
+            class="sellers-modal-form_message"
+            placeholder="Enter text"
+          ></textarea>
+        </label>
+
+        <button type="submit" class="sellers-modal-form_submit-btn">
+          Submit
+        </button>
+      </form>
+    </div>
   </div>
 
   <!-- pop-up -->
-  <div class="modal sellers-pop-up" data-modal="9">
+  <div class="modal sellers-pop-up" data-modal="11">
     <button class="js-modal-close sellers-thanks-modal_close-btn" type="button">
       <svg class="sellers-thanks-modal_close-icon">
         <use href="/simply-chocolate-project-15/assets/symbol-defs-39dc2d95.svg#icon-x-close"></use>
