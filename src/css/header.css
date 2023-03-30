@@ -93,6 +93,13 @@
   letter-spacing: -0.02em;
 
   color: var(--clr-text-secondary);
+  transition: color 250ms var(--time-function);
+}
+
+.header_link:hover,
+.header_link:focus,
+.header_link:active {
+  color: var(--clr-back-ground-modified);
 }
 
 @media screen and (min-width: 1200px) {
