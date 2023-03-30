@@ -57,10 +57,12 @@
             type="email"
             placeholder="Enter your email"
             class="subscribe-modal-input"
-            pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
+            pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$"
             required
         /></label>
-        <button type="submit" class="subscribe-modal-submit">Submit</button>
+        <button type="submit" class="subscribe-modal-submit js-modal-close">
+          Submit
+        </button>
       </form>
     </div>
   </div>
