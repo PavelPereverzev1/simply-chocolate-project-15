@@ -16,11 +16,6 @@
   color: var(--clr-text-modified);
 }
 
-.reviews .container {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
 .reviews {
   padding-top: 72px;
   padding-bottom: 72px;
@@ -34,7 +29,7 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .reviews {
     padding-top: 128px;
     padding-bottom: 128px;
@@ -183,19 +178,29 @@
   align-items: center;
   padding: 0;
   background-color: #fafafa;
+  color: var(--clr-text-primary);
   border: none;
+  border-radius: 50%;
   width: 24px;
   height: 24px;
   position: absolute;
   top: 14px;
   right: 14px;
   cursor: pointer;
+  transition: border-color 250ms var(--time-function);
 }
 
 .reviews-modal_close-icon {
-  stroke: var(--clr-text-primary);
+  stroke: currentColor;
   width: 24px;
   height: 24px;
+}
+
+.reviews-modal_close-btn:hover,
+.reviews-modal_close-btn:focus{
+  color: #fafafa;
+  background-color: var(--clr-text-modified) ;
+
 }
 
 .rewiews-modal_title {
@@ -254,7 +259,7 @@
   font-weight: var(--font-weight-medium);
   line-height: 1.21;
   letter-spacing: -0.02em;
-  color: #000;
+  color: var(--clr-text-modal);
 }
 
 .input-field-wraper {
@@ -275,8 +280,8 @@
 }
 
 .modal-form_submit-btn {
+  display: block;
   padding: 12px 28px;
-  background-color: var(--clr-back-ground-modified);
   height: 41px;
   min-width: 93px;
   border-radius: 100px;
@@ -284,7 +289,7 @@
   font-weight: var(--font-weight-semi-bold);
   line-height: 1.21;
   color: var(--clr-text-secondary);
-  display: block;
+  background-color: var(--clr-back-ground-modified);
   transition: all 250ms var(--time-function);
 }
 
@@ -469,9 +474,9 @@
     content: url(/img/reviews/chocolate-bar-desktop.webp);
   }
 
-  @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
-    screen and (min-width: 1200px) and (min-resolution: 192dpi),
-    screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+    screen and (min-width: 768px) and (min-resolution: 192dpi),
+    screen and (min-width: 768px) and (min-resolution: 2dppx) {
     .reviews-thanks-modal::after {
       content: url(/img/reviews/chocolate-bar-desktop2x.webp);
     }
