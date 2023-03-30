@@ -259,7 +259,7 @@ document.addEventListener('DOMContentLoaded', function () {
 (() => {
   const refs = {
     openModalBtn: document.querySelector('[data-modal-open]'),
-    modal: document.querySelector('[data-modal]'),
+    modal: document.querySelector('[data-img-modal]'),
     iframe: document.querySelector('.iframe'),
   };
 
