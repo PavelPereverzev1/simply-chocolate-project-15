@@ -153,6 +153,7 @@
 @media screen and (min-width: 768px) {
   .sellers__modal-slide {
     width: 160px;
+    min-height: 235px;
     padding-top: 24px;
     padding-bottom: 18px;
   }
@@ -173,10 +174,18 @@
   color: #111111;
 
   display: block;
-  margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
   width: fit-content;
   padding: 8px 27px 8px 27px;
 }
+
+@media screen and (min-width: 768px) {
+  .sellers__modal-img_small {
+    margin-bottom: 48px;
+  }
+}
+
 .sellers__slide {
   height: 300px;
 }
@@ -200,36 +209,56 @@
   background: #fd9222;
 }
 /* form */
-
-.sellers-modal {
+.sellers-modal-wraper{
   opacity: 0;
+  pointer-events: none;
   visibility: hidden;
   position: fixed;
+  overflow-y: auto;
+  scrollbar-width: 1px;
   top: 50%;
   left: 50%;
   translate: -50% -50%;
+  z-index: 29;
+  height: max-content;
+  width: 313px;
+  height: 100%;
+  transition: all 250ms var(--time-function);
+}
+
+.sellers-modal-wraper::-webkit-scrollbar{
+  display: none;
+}
+
+.sellers-modal {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  position: relative;
   z-index: 30; /* Должен быть выше чем у подложки*/
   background-color: #fafafa;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 15px;
-  transition: 0.3s all;
-  position: fixed;
   width: 100%;
   max-width: 311px;
   padding: 32px 24px;
 }
 
 @media screen and (min-width: 768px) {
+  
+  .sellers-modal-wraper{
+    width: 611px;
+  }
   .sellers-modal {
     max-width: 609px;
     padding: 48px;
   }
 }
 
-.sellers-modal.active,
-.sellers-thanks-modal.active {
+.sellers-modal-wraper.active,
+.sellers-pop-up.active {
   opacity: 1;
+  pointer-events: all;
   visibility: visible;
 }
 .sellers-modal-svg {
@@ -277,6 +306,8 @@
   .sellers-modal-form-input-descr {
     width: 100%;
   }
+
+
 }
 
 @media screen and (min-width: 768px) {
@@ -459,6 +490,58 @@
   transition: all 250ms var(--time-function);
 }
 
+@media screen and (min-width: 768px){
+  .reviews-thanks-modal {
+    width: 100%;
+    max-width: 516px;
+    height: 414px;
+    padding: 163px 49px 163px 170px;
+  }
+
+  .reviews-thanks-modal_close-btn {
+    width: 40px;
+    height: 40px;
+    top: 24px;
+    right: 24px;
+    background-color: var(--clr-text-modal-modified);
+    border-radius: 50%;
+  }
+
+  .reviews-thanks-modal_close-icon {
+    width: 22px;
+    height: 22px;
+    stroke: #d44528;
+  }
+
+  .sellers-thanks-modal_title {
+    margin-bottom: 8px;
+    font-size: 24px;
+    line-height: 1.17;
+    text-align: left;
+    color: var(--clr-text-modal-modified);
+  }
+  .thanks-modal_text {
+    max-width: 100%;
+    font-size: 18px;
+    line-height: 1.33;
+  }
+
+  .reviews-thanks-modal::after {
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    content: url(/img/reviews/chocolate-bar-desktop.webp);
+  }
+
+  @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+    screen and (min-width: 768px) and (min-resolution: 192dpi),
+    screen and (min-width: 768px) and (min-resolution: 2dppx) {
+    .reviews-thanks-modal::after {
+      content: url(/img/reviews/chocolate-bar-desktop2x.webp);
+    }
+  }
+}
+
 .sellers-thanks-modal_close-btn {
   width: 28px;
   height: 28px;
@@ -493,10 +576,11 @@
   bottom: -7px;
   content: url(/img/reviews/chocolate-bar-mobile.webp);
 }
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
-  screen and (min-width: 1200px) and (min-resolution: 192dpi),
-  screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-  .sellers-pop-up::after {
+
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2),
+  screen and (max-width: 767px) and (min-resolution: 192dpi),
+  screen and (max-width: 767px) and (min-resolution: 2dppx) {
+  .reviews-thanks-modal::after {
     content: url(/img/reviews/chocolate-bar-mobile@2x.webp);
   }
 }

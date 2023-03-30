@@ -58,7 +58,7 @@
   margin-bottom: 24px;
   font-weight: var(--font-weight-semi-bold);
   font-size: 18px;
-  line-height: 1.33px;
+  line-height: 1.33;
   color: #111111;
 }
 
@@ -351,9 +351,9 @@
   bottom: -7px;
   content: url(/img/reviews/chocolate-bar-mobile.webp);
 }
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
-  screen and (min-width: 1200px) and (min-resolution: 192dpi),
-  screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2),
+  screen and (max-width: 767px) and (min-resolution: 192dpi),
+  screen and (max-width: 767px) and (min-resolution: 2dppx) {
   .reviews-thanks-modal::after {
     content: url(/img/reviews/chocolate-bar-mobile@2x.webp);
   }
