@@ -488,14 +488,14 @@
 }
 
 @media screen and (min-width: 768px) {
-  .reviews-thanks-modal {
+  .sellers-pop-up {
     width: 100%;
     max-width: 516px;
     height: 414px;
     padding: 163px 49px 163px 170px;
   }
 
-  .reviews-thanks-modal_close-btn {
+  .sellers-thanks-modal_close-btn {
     width: 40px;
     height: 40px;
     top: 24px;
@@ -556,6 +556,7 @@
 .sellers-thanks-modal_title {
   margin-bottom: 8px;
   text-align: left;
+  text-transform: uppercase;
   color: var(--clr-text-modal-modified);
 }
 
