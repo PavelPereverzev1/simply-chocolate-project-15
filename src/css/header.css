@@ -229,6 +229,8 @@
   width: 220px;
 
   z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
 
   background-color: #1e1823;
 
