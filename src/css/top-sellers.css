@@ -212,10 +212,10 @@
 .sellers-modal-wraper{
   opacity: 0;
   pointer-events: none;
-  /* visibility: hidden; */
+  visibility: hidden;
   position: fixed;
   overflow-y: auto;
-  scrollbar-width: none;
+  scrollbar-width: 1px;
   top: 50%;
   left: 50%;
   translate: -50% -50%;
@@ -225,6 +225,11 @@
   height: 100%;
   transition: all 250ms var(--time-function);
 }
+
+.sellers-modal-wraper::-webkit-scrollbar{
+  display: none;
+}
+
 .sellers-modal {
   margin-top: 10px;
   margin-bottom: 10px;
