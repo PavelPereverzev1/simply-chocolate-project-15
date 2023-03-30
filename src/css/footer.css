@@ -83,6 +83,15 @@
 .footer-anchorlinks:not(:last-child) {
   margin-bottom: 18px;
 }
+
+.footer-anchorlinks>a{
+  transition: color 250ms var(--time-function);
+}
+
+.footer-anchorlinks>a:hover,
+.footer-anchorlinks>a:focus{
+  color: var(--clr-back-ground-modified);
+}
 .social-list-footer {
   display: flex;
   gap: 14px;
