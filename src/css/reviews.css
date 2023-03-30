@@ -360,7 +360,7 @@
   screen and (max-width: 767px) and (min-resolution: 192dpi),
   screen and (max-width: 767px) and (min-resolution: 2dppx) {
   .reviews-thanks-modal::after {
-    content: url(/img/reviews/chocolate-bar-mobile@2x.webp);
+    content: url(/img/reviews/chocolate-bar-mobile.webp);
   }
 }
 
@@ -478,7 +478,7 @@
     screen and (min-width: 768px) and (min-resolution: 192dpi),
     screen and (min-width: 768px) and (min-resolution: 2dppx) {
     .reviews-thanks-modal::after {
-      content: url(/img/reviews/chocolate-bar-desktop2x.webp);
+      content: url(/img/reviews/chocolate-bar-desktop.webp);
     }
   }
 }
